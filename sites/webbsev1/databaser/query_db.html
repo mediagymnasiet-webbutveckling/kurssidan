@@ -1,0 +1,374 @@
+-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+
+    <title>Webbserverprogrammering 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+
+        <div class="item">
+            <div class="header">
+                Webbserverprogrammering 1
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+
+
+
+        <div class="item">
+            <div class="header">
+                PHP
+            </div>
+            <div class="menu">
+                <a class="item" href="../php/gettingstarted.html">
+                    Komma igång
+                </a>
+                <a class="item" href="../php/phpbasics.html">
+                    PHP Grunder
+                </a>
+                <a class="item" href="../php/filehandle.html">
+                    Filhantering
+                </a>
+                <a class="item" href="../php/sessions.html">
+                    Sessioner
+                </a>
+                <a class="item" href="../php/redirects.html">
+                    Omdirigering
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Databaser
+            </div>
+            <div class="menu">
+                <a class="item" href="intro_db.html">
+                    Introduktion
+                </a>
+                <a class="item" href="connect_db.html">
+                    Databasuppkoppling
+                </a>
+                <a class="item" href="query_db.html">
+                    Databasförfrågningar
+                </a>
+                <a class="item" href="url_parameter.html">
+                    Använda url-parametrar
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">Fördjupning PHP</div>
+            <div class="menu">
+              <a class="item" href="../more_php/php_upload.html">
+                Ladda upp filer med php
+              </a>
+            </div>
+          </div>
+        <div class="item">
+            <div class="header">
+                Säkerhet
+            </div>
+            <div class="menu">
+                <a class="item" href="../security/about.html">Om säkerhet
+                </a>
+                <a class="item" href="../security/sql_injections.html">SQL Injektioner
+                </a>
+                <a class="item" href="../security/crypt_password.html">Kryptera lösenord
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Projektarbete
+            </div>
+            <div class="menu">
+                <a class="item" href="../project/about_project.html"> Om projektarbetet
+                </a>
+                <a class="item" href="../project/project_planning.html"> Projektplanering & rapport
+                </a>
+                <a class="item" href="../project/using_git.html"> Använda Git (frivilligt)
+                </a>
+                <a class="item" href="../project/project_ideas.html"> Valbara projektmoment
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                 <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbserverprogrammering 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../../webb1/info/kursplan.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+        <div class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+                            <!-- Intro HTML-->
+                            <h1 class="ui header"> Databasförfrågningar</h1>
+
+                            <p>När du väl kopplat upp dig mot uppkopplingen mellan PHP och MySQL kan du arbeta med
+                                förfrågningar i SQL för att lagra, välja, uppdatera och radera data i en eller flera
+                                tabeller. De fyra grundoperationerna brukar kallas CRUD - Create, Read, Update och
+                                Delete. I följande tabelle ges en översikt av dessa:</p>
+
+                            <p> I följande fyra videos går jag igenom var och en av dessa.</p>
+                            <h3 class="ui header">1. Create - lagra data med SQL-förfrågan INSERT</h3>
+
+                            <div class="ui compact segment">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KUoqNaVCOI0"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="ui compact segment">
+                                <pre><code class="php">//Uppkoppling mot databas....
+        
+//LAGRA DATA MED SQL-FÖRFRÅGAN INSERT
+$query = "INSERT INTO user(username, password) VALUES ('$username', '$password')";
+
+$result = mysqli_query($connection, $query);
+
+if(!$result) {
+    die("Query failed" . mysqli_error($connection))
+} else {
+    echo "User aded to db";
+}
+        
+//Koppla ner mot databas....
+        </code></pre>
+                            </div>
+
+                            <h3 class="ui header">2. Read- hämta data med SQL-förfrågan SELECT</h3>
+                            <div class="ui compact segment">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ugV9ZBLuP-k"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                            </div>
+                            <div class="ui compact segment">
+                                <pre><code class="php">//Uppkoppling mot databas....
+    
+//HÄMTA DATA MED SQL-FÖRFRÅGAN SELECT 
+$query = "SELECT * FROM user WHERE username='$username'";
+
+$result = mysqli_query($connection, $query);
+
+if(!$result) {
+    die("Query failed" . mysqli_error($connection))
+}
+
+$row = mysqli_fetch_assoc($result);
+
+$db_username = $row['username'];
+$db_password = $row['password'];
+
+//Koppla ner mot databas....
+</code></pre>
+                            </div>
+                            <p>Du kan också behöva hämta flera rader data, exempelvis alla inlägg från en viss
+                                användare eller flera användare.</p>
+                            <div class="ui compact segment">
+                                <pre><code class="php">//Uppkoppling mot databas....
+        
+
+//HÄMTA DATA MED SQL-FÖRFRÅGAN SELECT 
+$query = "SELECT * FROM post";
+
+$result = mysqli_query($connection, $query);
+
+if(!$result) {
+    die("Query failed: " . mysqli_error($connection));
+}
+
+while($row = mysqli_fetch_assoc($result)) {
+
+    $postId = $row['id'];
+    $userId = $row['userId'];
+    $title = $row['title'];
+
+    echo "postId: " . $postId . " userID: "  . $userId . " title " . $title;
+    echo "&lt;br/&gt;";
+    
+}
+
+//Koppla ner mot databas....
+    </code></pre>
+                            </div>
+                            <h3 class="ui header">3. Update - uppdatera data med SQL-förfrågan UPDATE</h3>
+                            <div class="ui compact segment">
+                                <pre><code class="php">//Uppkoppling mot databas....
+        
+//UPPDATERA DATA MED SQL-FÖRFRÅGAN UPDATE
+$query = "UPDATE post SET title='$title', content='$content' WHERE id='$postId'";
+
+$result = mysqli_query($connection, $query);
+
+if(!$result) {
+    die("Query failed" . mysqli_error($connection))
+} else {
+    echo "Post updated";
+}
+
+//Koppla ner mot databas....
+    </code></pre>
+                            </div>
+                            <h3 class="ui header">4. Delete - radera data med SQL-förfrågan DELETE</h3>
+                            <div class="ui compact segment">
+                                <pre><code class="php">//Uppkoppling mot databas....
+        
+//RADERA DATA MED SQL-FÖRFRÅGAN DELETE
+$query = "DELETE FROM post WHERE id='$postId'";
+
+$result = mysqli_query($connection, $query);
+
+if(!$result) {
+    die("Query failed" . mysqli_error($connection))
+} else {
+    echo "Post deleted";
+}
+
+//Koppla ner mot databas....
+    </code></pre>
+                            </div>
+
+                            <div class="ui segment link">
+                                <h4 class="ui header link">Länkar </h4>
+                                <a href="https://www.w3schools.com/php/php_mysql_insert.asp">PHP, databses and mysqli
+                                </a>
+                                <br>
+
+
+                            </div>
+
+
+                            <div class="ui hidden divider"></div>
+                            <a href="connect_db.html">
+                                <button class="ui left floated labeled icon button">
+                                    <i class="left arrow icon"></i>
+                                    Databasuppkoppling
+                                </button>
+                            </a>
+
+
+                            <a href="url_parameter.html">
+                                <button class="ui right floated labeled icon button">
+                                    <i class="right arrow icon"></i>
+                                    Använda url-parametrar</button>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

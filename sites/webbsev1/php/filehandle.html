@@ -1,0 +1,460 @@
+-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+
+    <title>Webbserverprogrammering 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+
+        <div class="item">
+            <div class="header">
+                Webbserverprogrammering 1
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+
+
+
+        <div class="item">
+            <div class="header">
+                PHP
+            </div>
+            <div class="menu">
+                <a class="item" href="../php/gettingstarted.html">
+                    Komma igång
+                </a>
+                <a class="item" href="phpbasics.html">
+                    PHP Grunder
+                </a>
+                <a class="item" href="filehandle.html">
+                    Filhantering
+                </a>
+                <a class="item" href="sessions.html">
+                    Sessioner
+                </a>
+                <a class="item" href="redirects.html">
+                    Omdirigering
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Databaser
+            </div>
+            <div class="menu">
+                <a class="item" href="../databaser/intro_db.html">
+                    Introduktion
+                </a>
+                <a class="item" href="../databaser/connect_db.html">
+                    Databasuppkoppling
+                </a>
+                <a class="item" href="../databaser/query_db.html">
+                    Databasförfrågningar
+                </a>
+                <a class="item" href="../databaser/url_parameter.html">
+                    Använda url-parametrar
+                </a>
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">Fördjupning PHP</div>
+            <div class="menu">
+              <a class="item" href="../more_php/php_upload.html">
+                Ladda upp filer med php
+              </a>
+            </div>
+          </div>
+        <div class="item">
+            <div class="header">
+                Säkerhet
+            </div>
+            <div class="menu">
+                <a class="item" href="../security/about.html">Om säkerhet
+                </a>
+                <a class="item" href="../security/sql_injections.html">SQL Injektioner
+                </a>
+                <a class="item" href="../security/crypt_password.html">Kryptera lösenord
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Projektarbete
+            </div>
+            <div class="menu">
+                <a class="item" href="../project/about_project.html"> Om projektarbetet
+                </a>
+                <a class="item" href="../project/project_planning.html"> Projektplanering & rapport
+                </a>
+                <a class="item" href="../project/using_git.html"> Använda Git (frivilligt)
+                </a>
+                <a class="item" href="../project/project_ideas.html"> Valbara projektmoment
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                 <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbserverprogrammering 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../../webb1/info/kursplan.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+        <div class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+                            <!-- Intro HTML-->
+                            <h1 class="ui header"> PHP Filhantering</h1>
+
+                            <div class="ui vertical segment">
+
+
+                                <p>
+                                    För att ett program ska bli riktigt användbart behövs någon form av datalagring.
+                                    Ett sätt att göra detta är att lagra informationen i en eller flera filer.<br />
+
+                                </p>
+
+
+
+                                <h2 class="ui header">Öppna och läsa från fil</h2>
+
+                                <p>Metodiken är: <br />
+                                    Man öppnar en fil med funktionen fopen som returner ett s.k. filhantag (
+                                    $handle i exemplet). Man använder
+                                    filhantaget för att sedan kunna skriva eller läsa till
+                                    filen. Medan filen är öppen
+                                    finns det en filpekare som håller reda på vart man är i filen. Funktionen börjar
+                                    läsa från början av filen.Slutligen är det viktigt att
+                                    stänga sin fil med funktion fclose.</p>
+
+                                <div class="ui compact segment">
+                                    <pre><code class="php">&lt;?php
+//Filnamnet läggs i en variabel
+$filename = "file.txt";
+
+//Filen öppnas för läsning och ett s.k hanttag till filen skapas
+$handle = fopen($filename, "r");
+                                                                  
+//Läsning görs från början av  filen med funktionen 
+//fread och läggs i en variabel $text och läser till filens storlek är nådd
+$text = fread($handle, filesize("file.txt"));
+                                
+//Innehållet i variabeln skrivs ut
+echo $text;
+
+//Stänger filen
+fclose($handle);
+?&gt;</code></pre>
+                                </div>
+                                <p> Flaggan "r" står för read, d.v.s läsning av fil och en flagga som "w" står för
+                                    skrivning av fil.
+                                    Du kan läsa om fler alternativ till flaggor vid filhantering samt mer om fgets och
+                                    andra läsfunktioner <a href="https://www.w3schools.com/php/php_file_open.asp"
+                                        target="_blank">här</a>.
+                                    I exemplet används funktion fread() där det först
+                                    argumentet innehåller filhandtaget och den andra den maximala storlek i bytes som
+                                    går att läsa.
+
+                                </p>
+                            </div>
+                            <div class="ui vertical segment">
+
+                                <h2 class="ui header">Skriva till fil</h2>
+                                <p>
+                                    På samma sätt kan vi skriva till fil med funktionen fwrite. Här är istället flaggan
+                                    satt till "w". Koden nedan skriver
+                                    alltså in texten till filen file.txt.
+                                    <br /> Ett problem som
+                                    kan
+                                    uppstå är att man inte har rättigheter att skriva till en fil i en viss mapp.
+                                    Du kan enkelt ändra detta genom att högerklicka på filen och ändra skriv- och
+                                    läs rättigheter.
+                                </p>
+
+                                <div class="ui compact segment">
+
+                                    <pre><code class="php">&lt;?php
+$filename = "file.txt";
+$handle = fopen($filename,"w");
+fwrite($handle, "Hello file! Test to write to file file.txt");
+fclose($handle);
+?&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="ui vertical segment" id="filhandle_ex">
+                                <h2 class="ui header"> Övning</h2>
+                                <div class="ui vertical segment">
+                                    <h3 class="ui header"> 1. Skriva och läsa till fil med fread och fwrite</h3>
+                                    <p> Använd förs fwrite för att skriva till en .txt fil. Använd sedan fread för att
+                                        läsa från samma fil och skriv ut sedan ut innehållet med echo.</p>
+
+
+                                </div>
+                            </div>
+
+                            <div class="ui vertical segment">
+
+                                <h2 class="ui header">Använda fgetcsv och fputcsv</h2>
+
+                                <p>Det finns ett flertal olika funktioner för att läsa
+                                    från fil i PHP som fgetc, fread, file_get_content som alla har sina olika
+                                    användningsområden. Mer info finns i <a href="http://php.net/manual/en/function.file.php"
+                                        target="_blank">PHP manualen</a>.</p>
+
+                                <p> En bra och robust funktion för att läsa ett användarnamn och lösenord på samma rad
+                                    är fgetcsv. <u>Jag rekommenderar denna metod till Uppgift 2 - Inloggningssystem </u>,
+                                    även om det är görbart på andra sätt. Den läser in en rad i taget från en fil som
+                                    man avgränsar exempelvis med "," eller ny rad "\n". Resultatet lagras i en ny
+                                    array. Du kan läsa mer om <a href="http://php.net/manual/en/function.fgetcsv.php"
+                                        target="_blank">fgetcsv i php manualen</a>. En <a href="https://sv.wikipedia.org/wiki/Comma-separated_value"
+                                        target="_blank">csv-fil är ett textfilsformat</a>
+                                    som används för att spara och överföra tabelldata där det är ordnat med
+                                    kommaseparerade värden.
+
+                                </p>
+
+
+
+
+
+
+                                <div class="ui compact segment">
+                                    En CSV-fil som innehåller användaruppgifter:
+                                    <pre><code class="text">
+sandra, kanin2018
+mattias, rocknroll1978
+elev_x, pw_webdev
+</code></pre>
+                                </div>
+                                <div class="ui compact segment">
+                                    <pre><code class="php">&lt;?php
+//Definerar en fil att läsa ifrån
+$file = "userdata.csv";
+
+
+//Öppnar en csv-fil för läsning
+$handle = fopen("userdata.csv","r");
+
+//Så länge det finns tecken att läsa från filen
+while(!feof($handle))
+{
+//Varje rad i csv-filen hamnar i ett fack i arrayen.
+//Max 100 tecken kan läsas och inläsningen separeras av komma
+$row = fgetcsv($handle, 100, ",");
+
+print_r($row);
+echo "<br/>";
+
+}
+//Stänger filen
+fclose($handle);
+                                        
+?&gt; </code> </pre>
+                                </div>
+                                <p> Funktionen feof() kollar om "end-of-file" har nåtts. Så länge den inte har den
+                                    fortsätter fgetcsv att läsa från filen.</p>
+                                <div class="ui compact segment">
+                                    Utskriften blir således följande
+                                    <pre><code class="text">
+Array ( [0] => sandra [1] => kanin2018 ) 
+Array ( [0] => mattias [1] => rocknroll1978 ) 
+Array ( [0] => elev_c [1] => pwwebdev ) 
+                                </code></pre>
+
+                                </div>
+                                <p>
+                                    På samma sätt kan vi skriva till fil med funktionen fputcsv. Här är istället
+                                    flaggan satt till "w". Koden nedan skriver
+                                    alltså in arrayen med texten "username" och "password" till filen userdata.csv.
+                                    De båda separeares med ett komma ",". Om fler arrayposter skulle skrivas in
+                                    skulle de hamna på en ny rad. <br /> Ett problem som
+                                    kan
+                                    uppstå är att man inte har rättigheter att skriva till en fil i en viss mapp.
+                                    Du kan enkelt ändra detta genom att högerklicka på filen och ändra skriv- och
+                                    läs rättigheter.
+                                </p>
+                                <div class="ui compact segment">
+                                    <pre><code class="php">&lt;?php
+$userdata = array("username", "password");
+$handle = fopen("userdata.csv","w");
+fputcsv($handle, $userdata);
+fclose($handle);
+?&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="ui vertical segment" id="filhandle_ex">
+                                <h2 class="ui header"> Övning</h2>
+                                <div class="ui vertical segment">
+                                    <h3 class="ui header">Använda filhantering för kommaseparerade värden</h3>
+                                    <p>2. Använd nu istället av fputcsv för att skriva in ett
+                                        fiktivt användarnamn och lösenord sepererade med komma på en rad. Använd
+                                        fgetcsv för att läsa in raden och skriv ut användarnamn och lösenordet var
+                                        för
+                                        sig.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="ui vertical segment">
+
+                                <h2 class="ui header">Felhantering vid filhantering</h2>
+
+                                <p>Mer info kommer</p>
+
+
+                            </div>
+
+                            <div id="superglobals" class="ui vertical segment">
+
+                                <h2 class="ui header">Att spara och ladda upp filer (bilder)</h2>
+
+
+
+                            </div>
+                            <div class="ui segment link">
+                                <h4 class="ui header link">Länkar </h4>
+                                <a href="https://webdesignskolan.se/php/php_Databaser_apache_wds-member/php_forts.php">Webbdesignskolan
+                                    om
+                                    filhantering</a>
+                                <br>
+
+
+                            </div>
+                            <div class="ui hidden divider"></div>
+                            <a href="phpbasics.html">
+                                <button class="ui left floated labeled icon button">
+                                    <i class="left arrow icon"></i>
+                                    PHP Grunder</button>
+                            </a>
+
+
+                            <a href="sessions.html">
+                                <button class="ui right floated labeled icon button">
+                                    <i class="right arrow icon"></i>
+                                    Sessioner</button>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+
+    <title>Webbserverprogrammering 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+
+        <div class="item">
+            <div class="header">
+                Webbserverprogrammering 1
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+
+
+
+        <div class="item">
+            <div class="header">
+                PHP
+            </div>
+            <div class="menu">
+                <a class="item" href="../php/gettingstarted.html">
+                    Komma igång
+                </a>
+                <a class="item" href="phpbasics.html">
+                    PHP Grunder
+                </a>
+                <a class="item" href="filehandle.html">
+                    Filhantering
+                </a>
+                <a class="item" href="sessions.html">
+                    Sessioner
+                </a>
+                <a class="item" href="redirects.html">
+                    Omdirigering
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Databaser
+            </div>
+            <div class="menu">
+                <a class="item" href="../databaser/intro_db.html">
+                    Introduktion
+                </a>
+                <a class="item" href="../databaser/connect_db.html">
+                    Databasuppkoppling
+                </a>
+                <a class="item" href="../databaser/query_db.html">
+                    Databasförfrågningar
+                </a>
+                <a class="item" href="../databaser/url_parameter.html">
+                    Använda url-parametrar
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="header">
+                Säkerhet
+            </div>
+            <div class="menu">
+                <a class="item" href="../security/about.html">Om säkerhet
+                </a>
+                <a class="item" href="../security/sql_injections.html">SQL Injektioner
+                </a>
+                <a class="item" href="../security/crypt_password.html">Kryptera lösenord
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">Fördjupning PHP</div>
+            <div class="menu">
+              <a class="item" href="../more_php/php_upload.html">
+                Ladda upp filer med php
+              </a>
+            </div>
+          </div>
+        <div class="item">
+            <div class="header">
+                Projektarbete
+            </div>
+            <div class="menu">
+                <a class="item" href="about_project.html"> Om projektarbetet
+                </a>
+                <a class="item" href="projekt_parts.html""> Momentbeskrivning
+                </a>
+                <a class="
+                    item" href="project_planning.html"> Projektplanering & rapport
+                </a>
+                <a class="item" href="using_git.html"> Använda Git (frivilligt)
+                </a>
+                <a class="item" href="project_ideas.html"> Valbara projektmoment
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                 <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbserverprogrammering 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../../webb1/info/kursplan.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+        <div class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+                            <!-- Intro HTML-->
+                            <h1 class="ui header">Projektarbete</h1>
+
+                            <p> Syftet med projektet är att omsätta kunskaper från de tidigare inlämningsuppgifterna i
+                                praktiken i ett större sammanhängande projekt där du fördjupar dig inom olika områden
+                                av PHP och MySQL.</p>
+
+                            <p>
+                                Du startar projektarbetet efter att du är klar med Uppgift 5 - Hantera inlägg, som i
+                                sin tur bygger på Uppgift 3 - Använda databas samt Uppgift 4 - Säkerhet.
+                                Du återanvänder alltså följande kod som en grund i projektarbetet:
+                            </p>
+
+
+                            <div class="ui list">
+
+                                <a class="item">
+                                    <i class="right triangle icon"></i>
+                                    <div class="content">
+                                        <div class="header">Uppgift 3 - Använda databas</div>
+                                        <div class="description">Inloggningssystem med sessions som använder en MySql
+                                            databas för datalagring.</div>
+                                    </div>
+                                </a>
+                                <a class="item">
+                                    <i class="right triangle icon"></i>
+                                    <div class="content">
+                                        <div class="header">Uppgift 4 - Säkerhet</div>
+                                        <div class="description">Grundläggande säkerhetstänk. Implementera försvar mot
+                                            sql-injektion samt kryptering av lösenord. </div>
+                                    </div>
+                                </a>
+
+                                <a class="item">
+                                    <i class="right triangle icon"></i>
+                                    <div class="content">
+                                        <div class="header">Uppgift 5- Hantera inläggg</div>
+                                        <div class="description">En inloggad anändare kan se sina inlägg. Skriva nya,
+                                            samt redigera eller radera befintliga.</div>
+                                    </div>
+                                </a>
+
+
+                            </div>
+                            <br />
+
+                            <h2 class="ui header">Vad ingår i projektarbetet?</h2>
+
+                            <p> Utifrån din grundkod och den databas du arbetat mot
+                                är ditt projektarbete väl anpassat till att vidareutvecklas till en fungerande blogg/
+                                forum - vad man väljer att kalla det. Ett Content Managagement System (CMS) är
+                                begreppet för en mer avancerad webbplats som är ett system för att administrera
+                                innehåll. Med
+                                innehåll menas texter, bilder, filmer, filer och dokument. Man kan säga att ett
+                                CMS ligger bakom själva hemsidan medan backend och ser till att rätt innehåll
+                                visas på rätt ställe frontend.</p>
+
+                            <p>
+                                När du börjar ditt projektarbete har du redan
+                                utvecklat funktionalitet för en administrationsdel där en inloggad användare kan
+                                hantera sina inlägg. Det som ingår i projektarbetet är att du väljer ett tema på din
+                                forum/blogg och sedan en
+                                design och layout utifrån ditt tema. Vad din blogg handlar om är efter ditt eget
+                                intresse, men
+                                ska vara seriöst. Kanske ett forum för ditt ishockey- eller fotbollslag,
+                                diskussionsforum
+                                om kluriga tal i Matematik 4 eller kanske en klassisk matblogg?
+                            </p>
+
+                            <h3 class="ui header">Ett exempel </h3>
+
+                            <p>Här kommer några skärmdumpar från ett projekt som jag satte ihop för att
+                                demonstrera ett exempel. Temat är en klättringsblogg där medlemmar kan skriva inlägg
+                                på boulderstenar som man kan rekommendera i skog och mark. Den som publicerar inlägget
+                                skriver var stenen ligger, svårighetsgrader m.m och en laddar upp en bild. Det finns
+                                absolut utrymme för förbättringspotential :-) <p>
+
+                                    <p>En välkomstsida där en ej registrerad besökare kan se senaste inlägg och
+                                        senaste bloggare:</p>
+                                    <div class="ui vertical center aligned segment">
+
+                                        <img src="../../../assets/images/project_welcome_site.PNG" alt="Projektarebte"
+                                            width="100%">
+
+                                    </div>
+
+                                    <p>En loginsida där en medlem kan logga in eller en blivande medlem kan registrera
+                                        sig.</p>
+                                    <div class="ui vertical center aligned segment">
+
+                                        <img src="../../../assets/images/project_login_site.png" alt="Projektarebte"
+                                            width="100%">
+                                    </div>
+                                    <p>En medlemssida där en inloggad användare kan skriva inlägg + ladda upp bild, se
+                                        sina egna inlägg
+                                        samt bilder samt redigera eller ta bort inlägg.</p>
+                                    <div class="ui vertical center aligned segment">
+
+                                        <img src="../../../assets/images/project_member_site.PNG" alt="Projektarebte"
+                                            width="100%">
+                                    </div>
+                                    <p> Detta var ett exempel och du har fria ramar i
+                                        just hur din blogg/forum ska se ut och fungera.</p>
+                                    <p>
+                                        Den utökade funktionaliteten av din blogg/forum bestämmer du. Du hämtar
+                                        inspiration
+                                        från <a href="project_ideas.html">mina förslag på valbala moment</a>. Eller så
+                                        vill du implementera en egen idé - men diskutera gärna med mig först så att det
+                                        stämmer bra överens med kunskapskraven. Du bestämmer alltså själv var du lägger
+                                        ribban och
+                                        vilka utökade funktionaliteter ska ingå på din webbplats! </p>
+
+                                    <p>
+                                        Begrepp som kommer att användas: <br />
+                                        Frontend = Webbplatsen (HTML/CSS och ev Javascript) <br />
+                                        Backend = Adminstrationsdelen (data du hämtar/lagrar från MySQL databasen m h a
+                                        PHP)
+                                    </p>
+
+                                    <p> På nästa sida har du en momentbeskrivning om hur du kan lägga upp ditt
+                                        projektarbete.</p>
+
+                                    <!--      <div class="ui segment link">
+                                        <h4 class="ui header link">Länkar </h4>
+                                        <a href="h#">?</a>
+                                        <br>
+
+
+                                    </div> -->
+
+
+                                    <div class="ui hidden divider"></div>
+                                    <!--   <a href="#">
+                                <button class="ui left floated labeled icon button">
+                                    <i class="left arrow icon"></i>
+                                    ?</button>
+                            </a> -->
+
+
+                                    <a href="projekt_parts.html">
+                                        <button class="ui right floated labeled icon button">
+                                            <i class="right arrow icon"></i>
+                                            Momentbeskrivning</button>
+                                    </a>
+
+
+                        </div>
+                    </div>
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

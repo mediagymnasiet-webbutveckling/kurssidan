@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+    <title>Webbutveckling 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+        <div class="item">
+            <div class="header">
+                Webbutveckling 1
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Introduktion till webben
+            </div>
+            <div class="menu">
+                <a class="item" href="../intro/intro.html">
+                    Intro
+                </a>
+                <a class="item" href="../intro/verktyg.html">
+                    Verktyg
+                </a>
+                <a class="item" href="../intro/begrepp.html">
+                    Begrepp
+                </a>
+                <a class="item" href="../intro/historia.html">
+                    Historia
+                </a>
+                <a class="item" href="../intro/teknisk_orientering.html">
+                    Teknisk orientering
+                </a>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                HTML
+            </div>
+            <div class="menu">
+                <a class="item" href="../html/introHTML.html">
+                    Intro till HTML
+                </a>
+                <a class="item" href="../html/grundkodHTML.html">
+                    En webbsidas struktur
+                </a>
+                <a class="item" href="../html/textHTML.html">
+                    Paragrafer och rubriker
+                </a>
+                <a class="item" href="../html/listsHTML.html">
+                    Listor
+                </a>
+                <a class="item" href="../html/linksHTML.html">
+                    Länkar
+                </a>
+                <a class="item" href="../html/imagesHTML.html">
+                    Bilder
+                </a>
+                <a class="item" href="../html/divspan.html">
+                    Div och span
+                </a>
+                <a class="item" href="../html/html5structure.html">
+                    HTML5 Struktur
+                </a>
+                <a class="item">
+                    Tabeller och formulär
+                </a>
+                <a class="item">
+                    Media
+                </a>
+                <a class="item" href="../html/validering.html">
+                    Validering
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                CSS
+            </div>
+            <div class="menu">
+                <a class="item" href="introCSS.html">
+                    Intro till CSS
+                </a>
+                <a class="item" href="moreaboutCSS.html">
+                    Mer om CSS
+                </a>
+                <a class="item" href="boxmodelCSS.html">
+                    Boxmodellen
+                </a>
+                <a class="item" href="edittextCSS.html">
+                    Typografi </a>
+                <a class="item" href="colorbackgroundCSS.html">
+                    Färger och bakgrund
+                </a>
+                <a class="item" href="selectorsCSS.html">
+                    CSS Selektorer
+                </a>
+                <a class="item" href="floatsCSS.html">
+                    Floats
+                </a>
+                <a class="item" href="position_lagerCSS.html">
+                    Positionering och lager
+                </a>
+                <a class="item" href="layout_floats.html">
+                    Layout med floats
+                </a>
+
+                <a class="item" href="grids.html">
+                    CSS Grid (frivilligt)
+                </a>
+                <a class="item" href="flexbox.html">
+                    CSS Flexbox (frivilligt)
+                </a>
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Responsiv Web design
+            </div>
+            <div class="menu">
+                <a class="item" href="../rwd/intro_rwd.html">
+                    Intro RWD
+                </a>
+                <a class="item">
+                    Enheter
+                </a>
+                <a class="item">
+                    Mediaqueries
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="header">
+                Javascript
+            </div>
+            <div class="menu">
+                <a class="item" href="../javascript/intro_js.html">
+                    Intro Javascript
+                </a>
+                <a class="item" href="../javascript/infoga_js.html">
+                    Infoga enkla javascript
+                </a>
+                <a class="item" href="../javascript/domscript.html">
+                    Dokumentobjektsmodellen
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Övrigt
+            </div>
+            <div class="menu">
+                <a href="../annat/upphovsratt.html" class="item">
+                    Upphovsrätt
+                </a>
+                <a href="../annat/integritet.html" class="item">
+                    Integritet och etik
+                </a>
+                <a href="../annat/tillganglighet.html" class="item">
+                    Tillgänglighet </a>
+                <a href="../annat/sakerhet.html" class="item">
+                    Säkerhet
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                 <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbutveckling 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../info/planering.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+                    >
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+
+        <div id="introCSS" class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+                            <!-- Intro HTML-->
+                            <h1 class="ui header"> Floats</h1>
+
+                            <p>Hittils har vi tittat på hur olika CSS egenskaper kan ändra utseendet på text, ge olika
+                                färger på förgrund och bakgrund men också hur man kan ändra de olika boxarnas inner-
+                                och yttermarginal, samt kantlinje. Vi har endast formaterat våra element såsom de
+                                befunnits sig i html-dokuments normala flöde. <br />
+                                I detta avsnitt ska vi titta på hur vi kan positionera våra element enligt andra
+                                önskemål.
+                                Dock innebär det att elementen måste frångås det normala flödet hur elementen
+                                visas på en sida.
+                            </p>
+
+                            <h2 class="ui header">Vad menas med ett dokuments normala flöde? </h2>
+
+                            <p> Per default visas elementen uppifrån och ner efter hur de är specifierade i
+                                html-dokumentet. Det finns dock en skillnad mellan olika typer av element (se
+                                avsnitt Boxmodellen).<br />
+                                Block-element börjar alltid på ny rad. De
+                                tar samtidigt upp 100% bredd av sitt föräldraelement och höjden avgörs av elementens
+                                innehåll. Inline element ordnas efter varandra (ej ny rad) och har bredden och höjden
+                                av
+                                sitt innehåll. Vi demomonstrerar med ett litet exempel på det normala flödet där ingen
+                                positionering är gjord i stilmallen. </p>
+
+                            <div class="ui compact segment">
+
+                                <iframe src="../../../assets/examples/normalflow/normalflow.html" style="height:550px;width:500px"></iframe>
+
+                            </div>
+
+                            <div class="ui compact segment">
+                                <pre><code class="html">&lt;h1&gt;Det normala flödet&lt;/h1&gt;
+
+&lt;p&gt;
+Jag är ett block-level element. Närliggande 
+block-element är efter mig.
+&lt;/p&gt;
+                                
+&lt;p&gt;
+Jag tar upp 100% av mitt föräldraelement och min höjd 
+defineras av mitt innehåll. Min totala bredd/höjd enligt
+boxmodellen är content + padding + border width/height.
+&lt;/p&gt;
+                                
+&lt;p&gt;
+Vi block-element har mellanrum som är definerad av en 
+margin
+&lt;/p&gt;
+                                
+&lt;div&gt;
+Detta är ett div element och är också ett 
+block-element
+&lt;/div&gt;
+                                
+&lt;p&gt;
+Inlineelement &lt;span&gt;som den här&lt;/span&gt; 
+och &lt;span&gt;denna &lt;/span&gt; kommer på samma rad så 
+länge det finns utrymme.
+&lt;span&gt;Inline elements som inte får plats inom 
+föräldralementets bredd följer på ny rad&lt;/span&gt;eller
+kommer på en ny rad som bilder gör: 
+&lt;img src="https://picsum.photos/400/100/?random"&gt;
+&lt;/p&gt;
+     </code></pre>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="ui vertical segment">
+
+                            <h2 class="ui header"> Att avända oss av Floats</h2>
+                            <p>
+                                Med hjälp av CSS egenskapen <code class="css" style="background-color: rgb(248, 243, 238)">float</code>
+                                kan ett element "plockas" ur det vanliga flödet och förflyttas enligt önskemål. Med
+                                värdet <code class="css" style="background-color: rgb(248, 243, 238)">left</code>
+                                förflyttas elementet så långt den kan till vänster i föräldralemenetet
+                                eller till höger med värdet <code class="css" style="background-color: rgb(248, 243, 238)">right</code>.
+                                Defaultvärdet till float är <code class="css" style="background-color: rgb(248, 243, 238)">none</code>,
+                                d.v.s att element ingår i det normala flödet.
+
+                                Vi visar med ett exempel med ett p-element innehållande både text och bild.
+
+                            </p>
+
+
+
+                            <h3 class="ui header">Ingen float - normala flödet</h3>
+                            <p> Bilden är ett inline-element där texten fortsätter på samma rad. Eftersom bilden är
+                                högre än texten blir det ett tomt uttryme ovan texten till höger om bilden.</p>
+                            <div class="ui compact segment">
+
+                                <iframe src="../../../assets/examples/floats/floatnone.html" style="height:200px;width:500px"></iframe>
+
+                            </div>
+                            <p>
+                                Detta är default-läget och samma sak som att sätta egenskapen float till <code class="css"
+                                    style="background-color: rgb(248, 243, 238)">none
+                                </code>.</p>
+
+                            <h3 class="ui header">Bilden till vänster</h3>
+                            <p>Bilden går så långt till vänster som den kan med float satt till <code class="css" style="background-color: rgb(248, 243, 238)">left</code>.
+                                Texten "wrappas"
+                                omrking bilden. För att få lite mellrum mellan text och bild är margin satt till
+                                1em.
+                            </p>
+
+
+
+                            <div class="ui compact segment">
+
+                                <iframe src="../../../assets/examples/floats/floatleft.html" style="height:200px;width:500px"></iframe>
+
+                            </div>
+
+                            <div class="ui compact segment">
+                                <pre><code class="css">img {
+    float: left;
+    font-size: .7em;
+    margin: 1em;
+}</code></pre>
+                            </div>
+
+                            <div class="ui message">
+
+                                <h4 class="ui header">Kuriosa: Analogi om floats</h4>
+                                <p> <br />Ett element har har tagits från sin normala position men fortsätter påverka
+                                    sin
+                                    omgivning.
+                                    På samma sätt som en ö omgiven av ström kan du se ett element med egenskapen float
+                                    som en ö i strömmande vatten. Den är inte i flödet men strömmen runtomkring
+                                    påverkas av den.
+                                </p>
+                            </div>
+
+                            <h3 class="ui header">Bilden till höger</h3>
+                            <p>Vi får samma effekt om vi sätter float till <code class="css" style="background-color: rgb(248, 243, 238)">right</code>,
+                                d.v.s till bilden flyter till höger och texten runtomkring.
+                            </p>
+
+                            <div class="ui compact segment">
+
+                                <iframe src="../../../assets/examples/floats/floatright.html" style="height:200px;width:500px"></iframe>
+
+                            </div>
+
+                            <div class="ui compact segment">
+                                <pre><code class="css">img {
+        float: right;
+        font-size: .7em;
+        margin: 1em;
+}</code></pre>
+                            </div>
+                            <h3 class="ui header">Att använda Clear</h3>
+
+                            <p> Element som justerats med float ordnas i sidled till höger eller till vänster. För att
+                                komma
+                                tillbaka till normala födet kan man använda <code class="css" style="background-color: rgb(248, 243, 238)">clear</code>
+                                på elementet som kommer efter det som
+                                satts till float: left
+                                eller float: right.
+                                Nedan är ett exempel där bilden har satts till <code class="css" style="background-color: rgb(248, 243, 238)">float:
+                                    left;</code> och underrukbriken sätts till <code class="css" style="background-color: rgb(248, 243, 238)">clear:
+                                    left;</code> för att komma till ny rad, d.v.s återvända till normalflödet.</p>
+
+                            <div class="ui compact segment">
+
+                                <iframe src="../../../assets/examples/floats/floatclear.html" style="height:400px;width:500px"></iframe>
+
+                            </div>
+                            <p>Till egenskapen clear finns förutom <code class="css" style="background-color: rgb(248, 243, 238)">left</code>,
+                                även <code class="css" style="background-color: rgb(248, 243, 238)">right</code> och
+                                <code class="css" style="background-color: rgb(248, 243, 238)">both</code>. Om
+                                flera
+                                element är satta till float både till höger och vänster kan värdet<code class="css"
+                                    style="background-color: rgb(248, 243, 238)">both</code> användas. </p>
+
+
+
+
+                        </div>
+
+
+
+                        <div class="ui vertical segment">
+                            <h2 class="ui header">Problem med floats</h2>
+
+                            <p>Floats har funnits länge inom CSS och det är de som har tagit om hand hur man vill
+                                placera olika sektioner, d.v.s layout. Dock kan det dyka upp märkliga beteenden som det
+                                är bra att känna till och hur man kan komma tillrätta med dem. </p>
+
+                            <p> Vanligt försöker alla blockelement att sätta en höjd som täcker in allt innehåll som
+                                finns i dem - om inte height har angetts. När vi använder float på ett element
+                                "plockas" det ur det normala flödet och räknas inte med som en del i föräldraelementet.
+                                Det här blir ett problemt som vi kan se i följande exempel. </p>
+
+                            <div class="ui compact segment">
+
+                                <iframe src="../../../assets/examples/floats/collapsingheight.html" style="height:200px;width:500px"></iframe>
+
+                            </div>
+
+                            <p>Kantlinjen visar föräldraelementet innehållande texten och bilden. När bilden flyter
+                                räknas inte elementets mått med och kommer utanför föräldraelementet. Detta problem
+                                kallas för "the great collapse" och kan åtgärdas med det s.k clearfix-hack. Det
+                                clearfix-hack som rekommenderas som bästa lösning till de flesta siutaioner är
+                                följande: </p>
+
+                            <div class="ui compact segment">
+                                <pre><code class="css">.clearfix::after
+{
+        content: "";
+        clear: both;
+        display: table;
+}</code></pre>
+                            </div>
+
+                            <p>Denna teknik skapar ett s.k pseudoelement efter element som man anger som
+                                <code class="css" style="background-color: rgb(248, 243, 238)">class="clearfix"</code>
+                                med en clear: both. Om du vill veta mer om detaljer
+                                <a href="https://css-tricks.com/clearfix-a-lesson-in-web-development-evolution/">läs
+                                    mer på denna länk.</a></p>
+
+                            <div class="ui compact segment">
+
+                                <iframe src="../../../assets/examples/floats/clearfix.html" style="height:200px;width:500px"></iframe>
+
+                            </div>
+
+                            <p> Genom att sätta <code class="css" style="background-color: rgb(248, 243, 238)">class="clearfix"</code>
+                                på vårt föräldraelement, i detta fall
+                                &lt;p&gt;-elementet tar nu bilden plats i elementet och hamnar inte utanför. </p>
+
+                        </div>
+                        <!-- 
+                        <div class="ui vertical segment">
+                            <h2 class="ui header">Användningsområden floats</h2>
+
+
+                        </div>
+ -->
+
+
+
+                        <div class="ui vertical segment">
+
+
+                            <div class="ui message">
+
+                                <div class="ui header">Kuriosa</div>
+
+
+                                <p>Den klassiska metoden att skapa layout för webbsidor är att använda sig
+                                    av
+                                    <b>floats</b>.
+                                    Idag finns det modernare alternativ somm CSS Flexbox och Grids, men
+                                    floats
+                                    är
+                                    fortfarande vanligt förekommande och det är bra att kunna tillämpa den
+                                    klassiska
+                                    metoden för CSS layout. <br />
+
+                                </p>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="ui vertical segment" id="float_ex">
+                            <h2 class="ui header"> Övningar</h2>
+                            <div class="ui vertical segment">
+                                <h3 class="ui header"> 1. Använda float på bilder med text</h3>
+                                <p> Skapa et html-dokument och en tillhörande stilmall (css). I &lt;body&gt; skapa en
+                                    &lt;div&gt;
+                                    som
+                                    innehåller två bilder och ett par stycken text. För att lätt använda dig av bilder
+                                    kan du länka bilder från en tjänst som heter <a href="https://picsum.photos/"
+                                        target="_blank">Lorem
+                                        Picsum</a>. Prova att använda <code class="css" style="background-color: rgb(248, 243, 238)">float:
+                                        left</code>
+                                    och <code class="css" style="background-color: rgb(248, 243, 238)">float: right</code>
+                                    på vardera bild så
+                                    att text och bild visas snyggt tillsammans. Tycker du att en del text ska hamna på
+                                    ny rad? Prova då att omsluta den texten med en &lt;div&gt; och använd sedan <code
+                                        class="css" style="background-color: rgb(248, 243, 238)">clear: both</code> på
+                                    det elementet. </p>
+                            </div>
+                            <div class="ui vertical segment">
+                                <h3 class="ui header"> 2. Enkelt bildgalleri</h3>
+
+                                <p> Skapa et html-dokument och en tillhörande stilmall (css). I &lt;body&gt; skapa en
+                                    &lt;div&gt; som innehåller sex stycken bilder. Målet är att få bilder efter
+                                    varandra på två rader med tre bilder i vardera. Använd tjänsten Lorem Picsum här -
+                                    eller om du hellre vill använda dina egna bilder. Varje bild ska sättas till <code
+                                        class="css" style="background-color: rgb(248, 243, 238)">float: left</code> och
+                                    ha en <code class="css" style="background-color: rgb(248, 243, 238)">width: 33.33%</code>,
+                                    d.v.s en en tredjedel var av ytan. Tänk på att du måste använda dig av
+                                    "clearfix-hack" för att de flytande elementen ska befinna sig inom
+                                    föräldraelementet.
+
+                                </p>
+
+
+                            </div>
+                            <div class="ui vertical segment">
+                                <h3 class="ui header"> </h3>
+
+                            </div>
+                        </div>
+
+                        <div class="ui segment link">
+                            <h4 class="ui header link">Länkar </h4>
+                            <a href="https://www.smashingmagazine.com/2009/10/mastering-css-coding-getting-started/"
+                                target="_blank">Smashing
+                                Magazine - Mastering CSS Coding: Getting Started
+                            </a>
+                            <br>
+                            <a href="https://www.w3schools.com/css/css_float.asp" target="_blank">W3Schools
+                                -
+                                CSS
+                                Float
+                            </a>
+                            <br>
+                            <a href="http://webbling.se/index.php/Layout" target="_blank">Webbling - Layout
+                                med
+                                floats
+                            </a>
+                            <br>
+                            <a href="http://learnlayout.com/float.html" target="_blank">Learn CSS layout
+                            </a>
+                            <br>
+
+                            <a href="https://css-tricks.com/all-about-floats/" target="_blank">CSS Tricks -
+                                All
+                                about
+                                floats
+                            </a>
+                            <br>
+                            <a href="https://learn-the-web.algonquindesign.ca/topics/float-clear/" target="_blank">Learn
+                                the web - Floats
+                                and clear
+                            </a>
+                            <br>
+
+
+                        </div>
+
+                        <div class="ui hidden divider"></div>
+                        <a href="floatsCSS.html">
+                            <button class="ui left floated labeled icon button">
+                                <i class="left arrow icon"></i>
+                                Floats</button>
+                        </a>
+
+
+                        <a href="position_lagerCSS.html">
+                            <button class="ui right floated labeled icon button">
+                                <i class="right arrow icon"></i>
+                                Positionering och lager </button>
+                        </a>
+
+
+                    </div>
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

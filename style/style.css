@@ -1,0 +1,97 @@
+.top.ui.menu {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.top.ui.menu .item {
+  padding: 20px;
+}
+
+.top.ui.secondary.menu .dropdown.item:hover,
+.top.ui.secondary.menu .link.item:hover,
+.top.ui.secondary.menu a.item:hover {
+  background: none;
+}
+
+.ui.sidebar ~ .fixed,
+.ui.sidebar ~ .pusher {
+  width: 100%;
+}
+
+.ui.visible.left.sidebar ~ .fixed,
+.ui.visible.left.sidebar ~ .pusher {
+  width: calc(100% - 260px);
+}
+
+.pushable > .pusher {
+  transition: transform 500ms ease, width 800ms ease;
+}
+
+.ui.main {
+  margin-top: 120px !important;
+  margin-bottom: 50px !important;
+}
+
+/************
+OVERRIDES
+/***********/
+
+.ui.vertical.segment {
+  margin-bottom: 40px !important;
+}
+
+.ui.main h1 {
+  margin-bottom: 50px !important;
+}
+
+.ui.main h2 {
+  margin-bottom: 30px !important;
+}
+
+.ui.main.header.link {
+  margin-bottom: 20px !important;
+}
+
+.ui.main.link a {
+  line-height: 2em;
+}
+
+.ui.main p,
+.ui.compact.segment {
+  margin-bottom: 30px !important;
+}
+
+.ui.main p,
+.ui.message {
+  line-height: 1.7em !important;
+}
+
+.ui.message {
+  margin-bottom: 30px !important;
+}
+
+.footer.segment {
+  padding: 5em 0;
+}
+
+#schedule table {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.top.ui.secondary.menu.item a {
+  padding: 2px;
+}
+
+#curriculum li {
+  margin-bottom: 0.2em;
+}
+
+ol li {
+  font-size: 1.1em;
+  margin-bottom: 10px !important;
+}
+
+.ui.main ul {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}

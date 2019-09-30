@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+    <title>Webbserverprogrammering 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+
+        <div class="item">
+            <div class="header">
+                Webbserverprogrammering 1
+            </div>
+            <div class="menu">
+                <a class="item" href="planering.html">
+                    Planering
+                </a>
+                <a class="item" href="kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+
+
+
+        <div class="item">
+            <div class="header">
+                PHP
+            </div>
+            <div class="menu">
+                <a class="item" href="../php/gettingstarted.html">
+                    Komma igång </a>
+                <a class="item" href="../php/phpbasics.html">
+                    PHP Grunder
+                </a>
+                <a class="item" href="../php/filehandle.html">
+                    Filhantering
+                </a>
+                <a class="item" href="../php/sessions.html">
+                    Sessioner
+                </a>
+                <a class="item" href="../php/redirects.html">
+                    Sessioner
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Databaser
+            </div>
+            <div class="menu">
+                <a class="item" href="../databaser/intro_db.html">
+                    Introduktion
+                </a>
+                <a class="item" href="../databaser/connect_db.html">
+                    Databasuppkoppling
+                </a>
+                <a class="item" href="../databaser/query_db.html">
+                    Databasförfrågningar
+                </a>
+                <a class="item" href="../databaser/url_parameter.html">
+                    Använda url-parametrar
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">Fördjupning PHP</div>
+            <div class="menu">
+              <a class="item" href="../more_php/php_upload.html">
+                Ladda upp filer med php
+              </a>
+            </div>
+          </div>
+
+        <div class="item">
+            <div class="header">
+                Säkerhet
+            </div>
+            <div class="menu">
+                <a class="item" href="../security/about.html">Om säkerhet
+                </a>
+                <a class="item" href="../security/sql_injections.html">SQL Injektioner
+                </a>
+                <a class="item" href="../security/crypt_password.html">Kryptera lösenord
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Projektarbete
+            </div>
+            <div class="menu">
+                <a class="item" href="../project/about_project.html"> Om projektarbetet
+                </a>
+                <a class="item" href="../project/project_planning.html"> Projektplanering & rapport
+                </a>
+                <a class="item" href="../project/using_git.html"> Använda Git (frivilligt)
+                </a>
+                <a class="item" href="../project/project_ideas.html"> Valbara projektmoment
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="ui top  fixed menu">
+            <a class="item sidebar">
+                <i class="sidebar icon big"></i>
+                Meny
+            </a>
+
+            <a class="item">
+                <div class="ui header">Webbserverprogrammering 1</div>
+            </a>
+
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../../webb1/info/kursplan.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="planering.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+
+        <!--Content-->
+        <div id="schedule" class="ui main container">
+
+            <div class="ui center aligned grid">
+                <div class="row">
+                    <div class="one wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="twelve wide column">
+                        <h1> Planering 16 TE Webbserverprogrammering 1 </h1>
+                        <div class="ui hidden divider "></div>
+
+                        <p> Lektioner:
+                            <br /> Fredagar fm 8.30 - 11.10 &nbsp &nbsp
+                            <u>Rast: 10.00 - 10.15</u>
+                            <br /> Fredagar em 12.10 - 14.40 &nbsp &nbsp
+                            <u>Rast: 13.30 - 13.45</u>
+
+                        </p>
+                        <table class="ui yellow striped selectable celled table">
+                            <thead>
+                                <tr>
+                                    <th>Vecka / Dag</th>
+                                    <th>Innehåll</th>
+                                    <th>Uppgift</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>34 Fredag fm</td>
+                                    <td>Inställd lektion</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>34 Fredag em</td>
+                                    <td>Inställd lektion</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>35 Fredag fm</td>
+                                    <td>
+                                        1. Presentation av kursen<br /> 2. Grupparbete + presentention - Vad är och hur
+                                        fungerar
+                                        dynamiska webbsidor? <br /> 3. Val av editor för PHP. Under lektioner kommer
+                                        jag
+                                        visa i <a href="https://code.visualstudio.com/">VS Code</a>, men du väljer
+                                        själv
+                                        editor för ditt arbete.
+                                    </td>
+                                    <td>Göra research i grupp om dynamiska webbsidor</td>
+                                </tr>
+                                <tr>
+                                    <td>35 Fredag em
+                                    </td>
+                                    <td>1. Installera <a href="https://www.apachefriends.org/index.html">lokal server
+                                            XAMPP
+                                        </a> för utvecklingsmijön WAMP = Windows Apache Databaser PHP
+                                        <br /> 2. Komma igång med PHP
+                                    </td>
+                                    <td><a href="../ex_files/PHPgrunder.zip">Lektionens PHP övningar</a>, <br /> <a
+                                            href="https://www.w3schools.com/php/">Resursmaterial:
+                                            PHP5 Tutorial W3Schools</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>36 Fredag fm</td>
+                                    <td><a href="../php/phpbasics.html">Genomgång: Variabler, arrayer, if-sats och
+                                            for-loopar
+                                        </a></td>
+                                    <td>forts övningar PHPGrunder</td>
+                                </tr>
+                                <tr>
+                                    <td>36 Fredag em
+                                    </td>
+                                    <td><a href="../php/phpbasics.html#superglobals">Genomgång: Superglobala variabler,
+                                            formulärhantering
+                                            och includes</a></td>
+                                    <td>forts övningar PHPGrunder. <br />Instruktioner <a href="https://drive.google.com/open?id=1d71aAdtAyGgkyVyvVy_WXxN18Lsz4S5KiicWk3BXdAM"
+                                            target="_blank">Uppgift 1 - PHP Sidor</a></td>
+                                </tr>
+                                <tr>
+                                    <td>37 Fredag fm</td>
+                                    <td>Arbeta med Uppgift 1</td>
+                                    <td>Uppgift 1 - PHP Sidor</td>
+                                </tr>
+                                <tr>
+                                    <td>37 Fredag em
+                                    </td>
+                                    <td>Arbeta med Uppgift 1</td>
+                                    <td>Uppgift 1 - PHP Sidor</td>
+                                </tr>
+                                <tr>
+                                    <td>38 Fredag fm</td>
+                                    <td>Arbeta med Uppgift 1</td>
+                                    <td>Uppgift 1 - PHP Sidor</td>
+                                </tr>
+                                <tr>
+                                    <td>38 Fredag em
+                                    </td>
+                                    <td>Inställd lektion</td>
+                                    <td><br /><b>Deadline Uppgift 1 - PHP Sidor</b><br /></td>
+                                </tr>
+                                <tr>
+                                    <td>39 Fredag fm</td>
+                                    <td><a href="../php/filehandle.html" target="_blank">1. Genomgång: Filhantering</a><br /><a
+                                            href="../php/filehandle.html">2.
+                                            Övningar Filhantering</a></td>
+                                    <td>Start
+                                        <a href="https://drive.google.com/open?id=1--sJFthSVgcG6mOT1limWv93wf4MP7-PI-3XKSCODBM">Uppgift
+                                            2 - Inlogningssystem</a></td>
+                                </tr>
+                                <tr>
+                                    <td>39 Fredag em
+                                    </td>
+                                    <td>Filhantering</td>
+                                    <td>Uppgift 2 - Inlogningssystem</td>
+                                </tr>
+                                <tr>
+                                    <td>40 Fredag fm</td>
+                                    <td><a href="../php/sessions.html">Genomgång: PHP Sessions/Redirects</a></td>
+                                    <td>Uppgift 2 - Inlogningssystem</td>
+                                </tr>
+                                <tr>
+                                    <td>40 Fredag em</td>
+                                    <td>Filhantering/PHP Sessions/Redirects</td>
+                                    <td>Uppgift 2 - Inlogningssystem</td>
+                                </tr>
+                                <tr>
+                                    <td>41 Fredag fm</td>
+                                    <td>Filhantering/PHP Sessions/Redirects</td>
+                                    <td>Uppgift 2 - Inlogningssystem</td>
+                                </tr>
+                                <tr>
+                                    <td>41 Fredag em
+                                    </td>
+                                    <td>Filhantering/PHP Sessions/Redirects</td>
+                                    <td>Uppgift 2 - Inlogningssystem</td>
+
+                                </tr>
+                                <tr>
+                                    <td>42 Fredag fm</td>
+                                    <td><a href="../databaser/intro_db.html" target="_blank">Om databaser/CRUD/mysqli</a></td>
+                                    <td><b>Deadline Uppgift 2 - Inlogningssystem</b><br />Start
+                                        <a href="https://drive.google.com/open?id=1Ys_LDXqaSwuWFLRALHPyp9cteIUu0INxGmihrhqPFyE">Uppgift
+                                            3 - Använda databas</a></td>
+                                    Övning</td>
+                                </tr>
+                                <tr>
+                                    <td>42 Fredag em
+                                    </td>
+                                    <td>Om databaser/CRUD/mysqli</td>
+                                    <td>Uppgift 3 - Använda databas</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>43 Fredag fm</td>
+                                    <td> Studiedag </td>
+                                    <td> </td>
+
+                                </tr>
+                                <tr class="warning">
+                                    <td>43 Fredag em
+                                    </td>
+                                    <td> Studiedag </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>44 </td>
+                                    <td>Höstlov</td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>45 Fredag fm
+                                    </td>
+                                    <td>Om databaser/CRUD/mysqli</td>
+                                    <td>Deadline Uppgift 3 - Använda databas</td>
+                                </tr>
+                                <tr>
+                                    <td>45 Fredag em
+                                    </td>
+                                    <td><a href="https://sandralmg.github.io/MGWebb/sites/webbsev1/security/about.html">Säkerhet
+                                            med PHP</a></td>
+                                    <td><a href="https://drive.google.com/open?id=18R9urrdU--E1SrgUbDuMsAffGahyt3Hxcb7AYnBfnm0"
+                                            target="_blank">Uppgift 4: Säkerhet</a></td>
+                                </tr>
+                                <tr>
+                                    <td>46 Fredag fm</td>
+                                    <td><a href="../databaser/query_db.html" target="_blank">Sql-frågan UPDATE och
+                                            DELETE</a> + <a href="../databaser/url_parameter.html" target="_blank">Använda
+                                            url-parametrar</a></td>
+                                    <td><a href="https://drive.google.com/open?id=1augMTJjFofxrQp3jI_7D0Jsly5MehoW3D7JSQYbaDyw"
+                                            target="_blank">Uppgift 5: Hantera inlägg</a></td>
+                                </tr>
+                                <tr>
+                                    <td>46 Fredag em
+                                    </td>
+                                    <td><a href="../databaser/query_db.html" target="_blank">Sql-frågan UPDATE och
+                                            DELETE</a> + <a href="../databaser/url_parameter.html" target="_blank">Använda
+                                            url-parametrar</a></td>
+                                    <td>Uppgift 5: Hantera inlägg</td>
+                                </tr>
+                                <tr>
+                                    <td>47 Fredag fm</td>
+                                    <td><a href="../project/about_project.html">Genomgång om projektarbetet</a></td>
+                                    <td><a href="../project/about_project.html">Projektarbete: Utveckla en blogg/forum</a></td>
+                                </tr>
+                                <tr>
+                                    <td>47 Fredag em
+                                    </td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>48 Fredag fm</td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>48 Fredag em
+                                    </td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>49 Fredag fm</td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>49 Fredag em</td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>50 Fredag fm</td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>50 Fredag em</td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td></td>
+                                    <td>Jullov</td>
+                                    <td></td>
+                                </tr>
+                               
+                                <tr>
+                                    <td>2 Fredag fm</td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>2 Fredag em</td>
+                                    <td>Arbeta med bloggen</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>3 Fredag fm</td>
+                                    <td>Redovisning</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                                <tr>
+                                    <td>3 Fredag em</td>
+                                    <td>Redovisning</td>
+                                    <td>Projektarbete: Utveckla en blogg</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>? Lektioner</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="one wide column">
+                        <!--  <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+
+
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+    <!--Local script-->
+    <script src="../../../src/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+    <title>Webbutveckling 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+        <div class="item">
+            <div class="header">
+                Webbutveckling 2
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+                <a class="item" href="../info/repetitionWebb1.html">
+                    Repetition Webbutveckling 1
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                CSS Fördjupning
+
+            </div>
+            <div class="menu">
+                <a class="item" href="selectorsCSS.html">
+                    CSS Selektorer
+                </a>
+                <a class="item" href="flexbox.html">
+                    CSS Flexbox
+                </a>
+                <a class="item" href="grids.html">
+                    CSS Grid
+                </a>
+                <a class="item" href="/rwd.html">
+                    Responsive Web Design
+                </a>
+                <a class="item" href="preprocessors.html">
+                    CSS Preprocessors
+                </a>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                Bilder och Grafik
+
+            </div>
+            <div class="menu">
+                <a class="item" href="../webgraphics/image_gallery.html">
+                    Bildgalleri med Flexbox/CSS Grid
+                </a>
+                <a class="item" href="../webgraphics/responsive_images.html">
+                    Responsiva bilder
+                </a>
+
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                Test
+            </div>
+            <div class="menu">
+                <a class="item" href="../testing/validation.html">
+                    Validering
+                </a>
+                <a class="item" href="../testing/web_support.html">
+                    Webbläsarstöd
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Javascript
+            </div>
+            <div class="menu">
+                <a class="item" href="../javascript/intro_js.html">
+                    Intro Javascript
+                </a>
+                <a class="item" href="../javascript/js_grunder.html">
+                    Javascript Grunder
+                </a>
+                <a class="item" href="../javascript/js_funktioner.html">
+                    Javascript Funktioner
+                </a>
+                <a class="item" href="../javascript/js_dom.html">
+                    Vad är DOM?
+                </a>
+                <a class="item" href="../javascript/js_use_dom.html"> Använda DOM </a>
+                <a class="item" href="../javascript/js_dom_events.html"> DOM Events</a>
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Ramverk och klassbibliotek </div>
+            <div class="menu">
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="header">
+                Animation och interaktiv grafik
+            </div>
+            <div class="menu">
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbutveckling 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../info/planering.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+                    >
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+
+        <div id="introCSS" class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+
+                            <h1 class="ui header"> CSS Selektorer</h1>
+
+                            <p></p>
+
+                            <h2 class="ui header"> Nödvändiga att kunna i kursen </h2>
+
+                            <h3 class="ui header">1. * </h3>
+                            <h4>Universalselektorn</h4>
+                            <p>Denna selektor väljer alla element på sidan - all textfärg blir grön.
+                            </p>
+
+
+
+                            <div class="ui compact segment">
+                                <pre><code class="css">* {
+    color: green;
+}</code></pre>
+                            </div>
+
+
+                            <h3 class="ui header">2. X </h3>
+                            <h4>Elementselektorn</h4>
+                            <p>I detta fall blir alla länkar lila och alla paragrafer teckenstorlek 20px.
+                            </p>
+
+                            <div class="ui compact segment">
+                                <pre><code class="css">a { color: purple; }
+p { font-size: 20px; }
+</code></pre>
+                            </div>
+
+                            <h3 class="ui header">3. X, Y</h3>
+                            <h4>Gruppselektorn</h4>
+                            <p>Separeras med ett kommatecken. Alla div's samt alla paragrafer får typsnittet Arial och
+                                storlek
+                                22px. Fler än två element kan väljas.
+                            </p>
+
+                            <div class="ui compact segment">
+                                <pre><code class="css"> div, p {
+        font-family: Arial;
+        font-size: 22px;
+    }</code></pre>
+                            </div>
+
+                            <h3 class="ui header">4. #X</h3>
+                            <h4>Selektor för id</h4>
+                            <p>Elementet med id="container" får färgen aqua som bakgrundsfärg. Id kan endast tillhör
+                                ett
+                                element.
+                            </p>
+                            <div class="ui compact segment">
+                                <pre><code class="css"> #container {
+            background-color: aqua;
+        }</code></pre>
+                            </div>
+
+
+                            <h3 class="ui header">5 .X</h3>
+                            <h4>Selektor för class</h4>
+                            <p>Alla element med class="gallery" får bredd 50% utifrån upptaget område av elementet.
+                                Class
+                                kan till skillnad från id sättas på flera element än ett. element.
+                            </p>
+                            <div class="ui compact segment">
+                                <pre><code class="css"> .gallery {
+                width: 50%;
+            }</code></pre>
+                            </div>
+
+                            <h3 class="ui header">6. X Y </h3>
+                            <h4>Arvselektor</h4>
+                            <p>Du använder denna när du vill komma åt ett element som är underelement till ett annat,
+                                d.v.s
+                                barn (child) till förälderelementet (parent).
+
+                            </p>
+                            <p>I detta fall får alla paragrafer med class="info" violet textfärg.</p>
+                            <div class="ui compact segment">
+                                <pre><code class="css"> .info p {
+            color: violet;
+        }</code></pre>
+                            </div>
+                            <p>Här får alla länkar i varje list-element i en oordnad lista en grå bakgrund.</p>
+                            <div class="ui compact segment">
+                                <pre><code class="css"> ul li a {
+            background-color: grey;
+        }</code></pre>
+                            </div>
+
+                            <div class="ui vertical segment"></div>
+                            <h3>Pseudo-klasser</h3>
+                            <p>För psedo-klasser sätter man kolontecknet ( : ) efter selektorn. De används för
+                                applicera
+                                en regel för ett valt tillstånd, exempelvis när en användare drar musen över ett visst
+                                element.
+                            </p>
+
+                            <h3 class="ui header">8. X:hover</h3>
+                            <p> När man gör mouse over element aktiveras regeln. I detta fall blir bakgrundfärgen lila
+                                när
+                                man "hovrar" över en länk. Bra att använd till knappar och menyer.</p>
+                            <div class="ui compact segment">
+                                <pre><code class="css">a:hover {
+                background-color: yellow;
+            }</code></pre>
+                            </div>
+
+                            <h3 class="ui header">7. X:visited</h3>
+
+                            <p> I detta fall blir alla av användaren besökta länkar gråa.
+                            </p>
+                            <div class="ui compact segment">
+                                <pre><code class="css">a:visited {
+     color: grey;
+}</code></pre>
+                            </div>
+
+                            <h3 class="ui header">9. X:focus</h3>
+                            <p>När ett element klickas eller vid "tab"-tangenten når elementet. Användbart vid att
+                                styla
+                                textrutor (input) i formulär.</p>
+                            <div class="ui compact segment">
+                                <pre><code class="css">input:focus{
+     border: 2px solid green;
+}</code></pre>
+                            </div>
+
+
+                            <h3 class="ui header">10. X:link</h3>
+                            <p> Alla länkar som ännu inte blir besökt är röda
+                            </p>
+                            <div class="ui compact segment">
+                                <pre><code class="css">a:link{
+     color: red;
+}</code></pre>
+                            </div>
+
+
+
+                        </div>
+                        <div class="ui vertical segment">
+
+                            <h2 class="ui header"> Bra att kunna i kursen </h2>
+
+                            <h3 class="ui header">12. X[type="value"]</h3>
+                            <p>Selektorn för att sätta en regel till ett visst attribut med ett visst värde. I detta
+                                fall
+                                får endast alla textrutor en grå bakgrund (inte andra som ex checkbox, m. fl.)</p>
+                            <div class="ui compact segment">
+                                <pre><code class="css">input[type="text"] {
+     background-color: lightgrey;
+}</code></pre>
+                            </div>
+
+                            <h3 class="ui header">21. X:nth-of-type(n)</h3>
+                            <p>Väljer det n:te elementet som finns inuti förälderelementet. I detta fall blir
+                                textfärgen
+                                grön för det andra p-elementet inuti det överordnade elementet.</p>
+                            <div class="ui compact segment">
+                                <pre><code class="css">p:nth-of-type(2) {
+     color: green;
+}</code></pre>
+                            </div>
+
+                            <h3 class="ui header">13. X > Y </h3>
+                            <p>Liknar arvselektor X . Skillnaden är att den endast väljder de element som är första
+                                barnet
+                                till föräldern. Här väljs alltså bara de p som har förälder div, inte de som är
+                                underornade
+                                p.
+                            </p>
+                            <div class="ui compact segment">
+                                <pre><code class="css">div > p {
+     background-color: blue;
+}</code></pre>
+                            </div>
+
+
+                            <h3 class="ui header">15. X + Y </h3>
+                            <p>Mer info kommer. Se annars länk nedan.</p>
+
+                            <h3 class="ui header">16. X ~ Y </h3>
+                            <p>Mer info kommer. Se annars länk nedan.</p>
+
+                        </div>
+
+                        <div class="ui vertical segment">
+
+                            <h2 class="ui header"> Du kanske använder någon gång i kursen</h2>
+
+                            <h3 class="ui header">17. X:before och X:after</h3>
+                            <p>Mer info kommer. Se annars länk nedan.</p>
+
+                            <h3 class="ui header">18. X:first-child</h3>
+                            <p>Mer info kommer. Se annars länk nedan.</p>
+
+                            <h3 class="ui header">19. X:nth-child(n)</h3>
+                            <p>Mer info kommer. Se annars länk nedan.</p>
+
+                            <h3 class="ui header">20. X:nth-last-child</h3>
+                            <p>Mer info kommer. Se annars länk nedan.</p>
+
+
+
+                        </div>
+
+
+
+
+                        <div class="ui segment link">
+                            <h4 class="ui header link">Länkar </h4>
+                            <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">W3Schools CSS
+                                Selector
+                                Reference
+                            </a>
+                            <br>
+                            <a href="hhttps://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048"
+                                target="_blank"> Envatotuts
+                                - The 30 CSS Selectors You Should Mememorize
+                            </a>
+                            <br>
+                        </div>
+
+                        <div class="ui hidden divider"></div>
+                        <a href="#">
+                            <button class="ui left floated labeled icon button">
+                                <i class="left arrow icon"></i>
+                                #</button>
+                        </a>
+
+
+                        <a href="#">
+                            <button class="ui right floated labeled icon button">
+                                <i class="right arrow icon"></i>
+                                #</button>
+                        </a>
+
+
+                    </div>
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js "
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

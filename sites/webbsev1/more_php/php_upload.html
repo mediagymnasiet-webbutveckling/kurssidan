@@ -1,0 +1,334 @@
+- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css" />
+
+    <title>Webbserverprogrammering 1</title>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="ui sidebar vertical menu">
+      <div class="item">
+        <div class="header">Webbserverprogrammering 1</div>
+        <div class="menu">
+          <a class="item" href="../info/planering.html"> Planering </a>
+          <a class="item" href="../info/kursplan.html"> Kursens innehåll </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">PHP</div>
+        <div class="menu">
+          <a class="item" href="../php/gettingstarted.html"> Komma igång </a>
+          <a class="item" href="phpbasics.html"> PHP Grunder </a>
+          <a class="item" href="filehandle.html"> Filhantering </a>
+          <a class="item" href="sessions.html"> Sessioner </a>
+          <a class="item" href="redirects.html"> Omdirigering </a>
+          <a class="item"> </a> <a class="item"> </a> <a class="item"> </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">Databaser</div>
+        <div class="menu">
+          <a class="item" href="../databaser/intro_db.html"> Introduktion </a>
+          <a class="item" href="../databaser/connect_db.html">
+            Databasuppkoppling
+          </a>
+          <a class="item" href="../databaser/query_db.html">
+            Databasförfrågningar
+          </a>
+          <a class="item" href="../databaser/url_parameter.html">
+            Använda url-parametrar
+          </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">Säkerhet</div>
+        <div class="menu">
+          <a class="item" href="../security/about.html">Om säkerhet </a>
+          <a class="item" href="../security/sql_injections.html"
+            >SQL Injektioner
+          </a>
+          <a class="item" href="../security/crypt_password.html"
+            >Kryptera lösenord
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Fördjupning PHP</div>
+        <div class="menu">
+          <a class="item" href="php_upload.html">
+            Ladda upp filer med php
+          </a>
+          <a class="item" href="#"> </a> <a class="item" href="#"> </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Projektarbete</div>
+        <div class="menu">
+          <a class="item" href="../project/about_project.html">
+            Om projektarbetet
+          </a>
+          <a class="item" href="../projectproject_planning.html">
+            Projektplanering & rapport
+          </a>
+          <a class="item" href="../projectusing_git.html">
+            Använda Git (frivilligt)
+          </a>
+          <a class="item" href="../project/project_ideas.html">
+            Valbara projektmoment
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end of sidebar -->
+    <!-- Pusher -->
+    <div class="pusher">
+      <!-- Top menu -->
+      <div class="top ui fixed menu">
+        <a class="item sidebar">  <i class="icon big sidebar"></i>Meny </a>
+        <a class="item">
+          <div class="ui header">Webbserverprogrammering 1</div>
+        </a>
+        <div class="right menu">
+          <div class="right menu">
+            <div class="item">
+              <a href="../../../index.html">
+                <img src=" ../../../assets/images/mglogo.jpg " width="100px " />
+              </a>
+            </div>
+            <div class="ui dropdown item">
+              Kurser <i class="dropdown icon"></i>
+              <div class="menu">
+                <a class="item" href="../../webb1/info/kursplan.html"
+                  >Webbutveckling 1</a
+                >
+                <a class="item" href="../../webb2/info/kursplan.html"
+                  >Webbutveckling 2</a
+                >
+                <a class="item" href="../../webbsev1/info/kursplan.html"
+                  >Webbserverprogrammering 1</a
+                >
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui icon input">
+                <input type="text" placeholder="Sök..." />
+                <i class="search link icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of top menu -->
+      </div>
+      <!-- end of pusher -->
+      <div class="ui main container">
+        <div class="ui  grid">
+          <div class="row">
+            <div class="three wide column">
+              <!--
+                <div class="ui grey segment">
+                  <p>three wide column</p>
+                </div>
+              -->
+            </div>
+            <div class="ten wide column">
+              <div class="ui vertical segment">
+                <!-- Intro HTML -->
+                <h1 class="ui header">Ladda upp filer med php</h1>
+
+                <p>
+                  Att ladda upp filer till webbservern är egentligen inte
+                  speciellt svårt med PHP. Man skapar ett formulär och anger att man
+                  ska kunna skicka filer med formuläret genom att ange
+                  attributet enctype="multipart/form-data". Med attributet
+                  accept för att styra vilka filer som man ska kunna välja,
+                  exempelvis bilder:
+                </p>
+
+                <div class="ui compact segment">
+                  <pre><code class="html">&lt;form enctype="multipart/form-data" method="POST"&gt;
+
+    &lt;input type="file" name="file_upload" accept="image/*" /&gt;
+    &lt;input type="submit" name="submit" value="Upload" /&gt;
+
+&lt;/form&gt;</code></pre>
+                </div>
+<p>Man kan även lägga till ett dolt fält till formuläret (type="hidden"), som talar om hur stora filer som vi vill tillåta,
+     värdet anges i bytes, 1 000 000 är ungefär 1 MB. 
+     Detta fält måste ligga före fältet "file" och kan inte överstiga värdet för upload_max_filesize 
+     i konfigurationsfilen php.ini (där 2 Megabyte är defaultvärde). Det är bra att PHP servern ger php-servern 
+     information om att den kan förvänta sig en fil som är mindre än vad som value är lika med. </p>
+
+     <div class="ui compact segment">
+            <pre><code class="html">&lt;form enctype="multipart/form-data" method="POST"&gt;
+
+    &lt;input type="hidden" name="MAX_FILE_SIZE" value="1000000" /&gt;
+    &lt;input type="file" name="file_upload" accept="image/*" /&gt;
+    &lt;input type="submit" name="submit" value="Upload" /&gt;
+
+&lt;/form&gt;</code></pre>
+          </div>
+
+          <p>När användaren har valt en fil och klickat på knappen för att ladda upp den, 
+              och inget fel inträffar, så skickas filen till servern och sparas som en temporär fil. 
+              Filens data kommer vi åt med en suberglobal variabel som heter $_FILES, det som finns i $_FILES är:</p>
+
+              <p>Om man skriver ut arrayen $_FILES['file_upload'] med print_r så kan det se ut något liknande detta:</p>
+
+              <div class="ui compact segment">
+                    <pre><code class="php">Array
+(
+    [name] => tomte.png
+    [type] => image/png
+    [tmp_name] => C:\xampp\tmp\phpE3A3.tmp
+    [error] => 0
+    [size] => 46375
+)</code></pre>
+                  </div>
+        
+<p> D.v.s den skrivs ut som en associativ array med filnamnet, filens typ, temporära filnamnet på servern, felkod (0 om inget fel) samt storleken i bytes.</p>
+
+<p>När väl filen är på webbservern i en temp-mapp kan man flytta filen till mappen där man vill ha sina uppladdade filer. 
+    Tänk på att mappen dit filen ska flyttas måste finnas för att det ska fungera. Man kan alltså hämta filnamnet på den temporära filen  från $_FILES.</p>
+                 
+    <div class="ui compact segment">
+            <pre><code class="php">$tmp_filename = $_FILES['file_upload']['tmp_name'];</code></pre>
+          </div>
+<p>Man behöver också bestämma vad filen ska heta, antingen låter får den orginalnamnet
+     eller så genererar man ett lämpligt unikt namn. Ska filen heta samma som den heter 
+     på användarens dator så hämtar man namnet från $_FILES och använder sedan php-funktionen 
+     basename för att städa bort allt förutom filnamnet. Man definerar även den mapp som filen ska ligga till i filkatalogen.</p>
+
+      <div class="ui compact segment">
+            <pre><code class="php">$upload_dir = "uploads/";
+$target_file = basename($_FILES['file_upload']['name']);</code></pre>
+          </div>
+
+<p>Glöm inte att kontrollera om filen redan finns, och bestäm vad som ska hända om den gör det. 
+    Använd php-funktionen file_exists() för att kontrollera detta och utför lämplig åtgärd om den finns. </p>
+
+    <p>För att flytta filen så används php-funktionen move_uploaded_file(string $filename , string $destination). Denna funktion returnerar TRUE om filen 
+        flyttades annars FALSE, detta gör att vi med fördel kan lägga anropet i en if-sats:</p>
+        <div class="ui compact segment">
+                <pre><code class="php">if(move_uploaded_file($tmp_file, $upload_dir . $target_file))
+{
+    $message = "Filen har laddats upp.";
+} 
+else 
+{
+    // Ett fel uppstod...
+}
+</code></pre>
+              </div>
+    <p>Om det uppstår ett fel så vill man kunna meddela användaren om exakt vad som gick snett, 
+        vi kan skapa en array med de möjliga felkoderna med en kort beskrivning, 
+        se <a href="http://www.php.net/manual/en/features.file-upload.errors.php" target="_blank">http://www.php.net/manual/en/features.file-upload.errors.php</a> . för mer information. </p>
+        <div class="ui compact segment">
+                <pre><code class="php">
+$upload_errors = array(
+    // http://www.php.net/manual/en/features.file-upload.errors.php
+    UPLOAD_ERR_OK          => "Inga fel.",
+    UPLOAD_ERR_INI_SIZE    => "Filen är större än den storlek som anges i php.ini (upload_max_filesize).",
+    UPLOAD_ERR_FORM_SIZE   => "Filen är större än den största filstorlek som tillåts av formuläret (MAX_FILE_SIZE).",
+    UPLOAD_ERR_PARTIAL     => "Filen blev delvis uppladdad.",
+    UPLOAD_ERR_NO_FILE     => "Ingen fil är vald.",
+    UPLOAD_ERR_NO_TMP_DIR  => "Ingen temporär katalog finns på webbservern.",
+    UPLOAD_ERR_CANT_WRITE  => "Kan inte skriva till disk.",
+    UPLOAD_ERR_EXTENSION   => "Filuppladdningen är stoppad av ett tillägg (extension)."
+);
+</code></pre>
+              </div>
+<p>Felmeddelanden sparas alltså till en array som kan anropas för att få ett bättre beskrivning om vad som gått fel.</p>
+<div class="ui compact segment">
+        <pre><code class="php">
+$error = $_FILES['file_upload']['error'];
+$message = $upload_errors[$error];
+</code></pre>
+      </div>
+      <p>Den kompletta koden finns i filen <a href="../ex_files/upload.php">upload.php </a>
+           som du kan ladda ner och använda dig av i ditt projekt. Du kan komma att behöva ändra 
+           lite i koden och lägga till kod till exempel för att filnamnet ska sparas ner på rätt sätt i din databas. samt att kontrollera att filen redan finns. Om det blir dubletter i databaser kan det bli fel när du ska hämta den unika bilden för ett visst inlägg.</p>
+        <div class="ui vertical segment">
+                    <h2 class="ui header"></h2>
+                  </div>
+
+                  <!--
+                    <div class="ui segment link">
+                        <h4 class="ui header link">Länkar </h4>
+                        <a href="h#">?</a>
+                        <br>
+
+
+                    </div>
+                  -->
+<!-- 
+                  <div class="ui hidden divider"></div>
+                  <a href="#">
+                    <button class="ui left floated labeled icon button">
+                      <i class="left arrow icon"></i> ?
+                    </button>
+                  </a> -->
+
+                  <a href="#">
+                    <button class="ui right floated labeled icon button">
+                      <i class="right arrow icon"></i> ?
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="three wide column ">
+                <!--
+                  <div class="ui grey segment ">
+                    <p>three wide column</p>
+                  </div>
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="ui inverted vertical center aligned footer segment">
+      <div class="ui container">
+        <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+        <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+      </div>
+    </div>
+    <!-- end of footer -->
+    <!-- Code syntax highlightning -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!-- jQuery include -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js "
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin=" anonymous "
+    ></script>
+    <!-- Semantic UI include script -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!-- Local script -->
+    <script src="../../../src/script.js "></script>
+  </body>
+</html>

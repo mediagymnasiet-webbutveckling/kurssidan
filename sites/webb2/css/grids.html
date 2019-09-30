@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+    <title>Webbutveckling 2</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+        <div class="item">
+            <div class="header">
+                Webbutveckling 2
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+                <a class="item" href="../info/repetitionWebb1.html">
+                    Repetition Webbutveckling 1
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                CSS Fördjupning
+
+            </div>
+            <div class="menu">
+                <a class="item" href="selectorsCSS.html">
+                    CSS Selektorer
+                </a>
+                <a class="item" href="flexbox.html">
+                    CSS Flexbox
+                </a>
+                <a class="item" href="grids.html">
+                    CSS Grid
+                </a>
+                <a class="item" href="rwd.html">
+                    Responsive Web Design
+                </a>
+                <a class="item" href="preprocessors.html">
+                    CSS Preprocessors
+                </a>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                Bilder och Grafik
+
+            </div>
+            <div class="menu">
+                <a class="item" href="../webgraphics/image_gallery.html">
+                    Bildgalleri med Flexbox/CSS Grid
+                </a>
+                <a class="item" href="../webgraphics/responsive_images.html">
+                    Responsiva bilder
+                </a>
+
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                Test
+            </div>
+            <div class="menu">
+                <a class="item" href="../testing/validation.html">
+                    Validering
+                </a>
+                <a class="item" href="../testing/web_support.html">
+                    Webbläsarstöd
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Javascript
+            </div>
+            <div class="menu">
+                <a class="item" href="../javascript/intro_js.html">
+                    Intro Javascript
+                </a>
+                <a class="item" href="../javascript/js_grunder.html">
+                    Javascript Grunder
+                </a>
+                <a class="item" href="../javascript/js_funktioner.html">
+                    Javascript Funktioner
+                </a>
+                <a class="item" href="../javascript/js_dom.html">
+                    Vad är DOM?
+                </a>
+                <a class="item" href="../javascript/js_use_dom.html"> Använda DOM </a>
+                <a class="item" href="../javascript/js_dom_events.html"> DOM Events</a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Ramverk och klassbibliotek </div>
+            <div class="menu">
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="header">
+                Animation och interaktiv grafik
+            </div>
+            <div class="menu">
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbutveckling 2</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../../webb1/info/kursplan.html">Webbutveckling 1</a>
+                            <a class="item" href="../info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+
+        <div id="introCSS" class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+
+                            <h1 class="ui header"> CSS Grids</h1>
+
+                            <p> CSS Grid Layout är en relativt ny webbteknik som gör det möjligt att arbeta med
+                                gridbaserad layout i ren CSS. Att fördela innehåll i rader och kolumner är i och för
+                                sig inget nytt sätt att arbeta på. Tidigare har man behövt använda stöd av ramverk
+                                såsom
+                                Boostrap eller egna definierade rader och kolumner. Att kunna skapa en flexibel och
+                                responsiv gridlayout i CSS har länge varit önskvärt och är möjlig i skrivande sekund
+                                om man ser till <a href="https://caniuse.com/#feat=css-grid" target="_blank"> CSS Grid
+                                    support
+                                    för de största webbläsarna som Chrome, Firefox, Safari och Edge.</a>
+                                <p> Till
+                                    skillnad från Flexbox som ni bekantat er med i föregående avsnitt kan CSS Grid
+                                    hantera både X-axel och Y-axel samtidigt - med andra ord en tvådimensionnell
+                                    layoutteknik. Det innebär att man kan arbeta med rader och kolumner på ett mycket
+                                    smidigare sätt än
+                                    tidigare. Det ska bli spännande att se utvecklingen av CSS Grid och vad den
+                                    möjliggör
+                                    inom layout och design. Kolla gärna in <a href="https://labs.jensimmons.com/"
+                                        target="_blank">Experimental
+                                        layout lab by Jen Simmons</a> och <a
+                                        href="https://speckyboy.com/creative-examples-css-grid-layouts/"
+                                        target="_blank">10 Creative Examples of CSS Grid in action </a>. </p>
+
+
+
+                                <br>
+
+                                <div class="ui compact segment">
+
+                                    <img src="../../../assets/images/css-grid-layouts-grid-working.jpg" alt="CSS Grid"
+                                        width="500px">
+                                </div>
+
+
+                        </div>
+
+                        <div class="ui vertical segment">
+                            <h2 class="ui header"> Grid terminologi</h2>
+
+                            <div class="ui compact segment">
+
+                                <img src="../../../assets/images/grid_termonlogi1.png" alt="CSS Grid" width="500px">
+                            </div>
+
+                            <div class="ui compact segment">
+
+                                <img src="../../../assets/images/grid_termonlogi2.png" alt="CSS Grid" width="500px">
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="ui vertical segment">
+                            <h2 class="ui header"> Hur CSS Grid fungerar</h2>
+                            <p>
+
+
+                                <ol>
+                                    <li><b>Använda <code class="css"
+                                                style="background-color: rgb(248, 243, 238)">display:grid
+                                            </code>för att göra ett element till en grid container.</b> <br />På så
+                                        sätt blir
+                                        även barnen till föräldraelementet till grid items</li>
+                                    <li><b>Specifera rader och kolumner för sin grid</b> <br />Antingen sätts de
+                                        explixit med
+                                        ett fixt antal eller implicit om en grid ska vara flexibel att hantera nya
+                                        rader/kolumner. </li>
+                                    <li><b>Tilldela varje grid item en specifik yta på vår grid. </b><br> Om de inte
+                                        tilldes en viss yta kommer de att flöda i den normala ordningen. </li>
+
+                                </ol>
+                            </p>
+
+                            Det finns många olika sätt i CSS Grids att skapa rader/kolumner och definera grid areas. Vi
+                            börjar med att lära oss de egenskaper för en grid cointainer och grid items som är absolut
+                            mest nödvändiga.
+
+                        </div>
+
+
+
+
+                        <div id="css_flipped" class="ui vertical segment">
+                            <h2 class="ui header"> Genomgång: CSS Grid</h2>
+                            <p> I följande två videor går jag igenom grunderna i CSS Grid för att skapa följande
+                                layout.</p>
+                            <div class="ui compact segment">
+
+                                <img src="../../../assets/images/css_grid_flipped_classroom.PNG" alt="CSS Grid"
+                                    width="500px">
+                            </div>
+                            <div class="ui compact segment">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6R7yfKT9sEA"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <div class="ui compact segment">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/n_yV62YaypM"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                            <p>I exemplet tar jag upp <a href="https://learncssgrid.com/" target="_blank">denna
+                                    källa
+                                    som
+                                    referensguide</a>.
+                                Skriv av, testa med egna
+                                värden. När du fått känsla och färdighet för CSS Grid testa dina kunskaper med
+                                spelet
+                                CSS Grid Garden - se länk sist ner på sidan </p>
+
+
+
+                        </div>
+                        <p>Om du vill lära dig mer om CSS Grid rekommenderar jag följande tutorialserie. </p>
+                        <div class="ui vertical segment">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/x7tLPhnA06w"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                        </div>
+
+
+                        <div class="ui vertical segment">
+                            <h2 class="ui header"> CSS Grid vs Flexbox</h2>
+                            <p>Eftersom du har lärt dig grunderna i Flexbox kanske du undrar om CSS Grid helt
+                                ersätter den andra layouttekniken? <br />
+                                I huvudsak kan man säga att Flexbox är bra på endimensionell layout och CSS Grid
+                                för
+                                tvådimensionell layout. Det finns också en del egenskaper som både Flexbox och CSS
+                                Grid kan göra. så vad ska man välja? Läs gärna <a
+                                    href="https://css-tricks.com/css-grid-replace-flexbox/" target="_blank">här</a>
+                                eller <a href="https://tutorialzine.com/2017/03/css-grid-vs-flexbox"
+                                    target="_blank">här</a>
+                                om det
+                                området. Generellt är vägledningen att använda CSS Grid för övergripande layout och
+                                Flexbox när man ska ordna innehåll inom ett element. Exempelvis: Ordna elementen
+                                inom en header med flexbox, men göra hela layouten med CSS Grid.</p>
+                        </div>
+
+
+                        <div class="ui vertical segment" id="grids_ex">
+                            <h2 class="ui header"> Övningar</h2>
+                            <div class="ui vertical segment">
+                                <h3 class="ui header"> 1. Layout 1 </h3>
+                                <p>Skapa layout med CSS Grids enligt bild. Använd dig först av
+                                    specifika linjenummer med <code class="css"
+                                        style="background-color: rgb(248, 243, 238)">grid-row</code>
+                                    och <code class="css"
+                                        style="background-color: rgb(248, 243, 238)">grid-column</code>.
+                                    Byt sedan ut den metoden och använd dig av <code class="css"
+                                        style="background-color: rgb(248, 243, 238)">grid-area</code>
+                                    där du först har definerat dina <code class="css"
+                                        style="background-color: rgb(248, 243, 238)">grid-template-areas</code>.
+                                    Använd dig av fix bredd/höjd i pixlar. Main content ska dock vara flexibel i höjd.
+                                </p>
+
+
+                                <div class="ui compact segment">
+
+                                    <img src="../../../assets/images/css_grid_challande1.png" alt="CSS Grid"
+                                        width="500px">
+                                </div>
+
+                                <h3 class="ui header"> 2. Layout 2 </h3>
+                                <p>Skapa layout med CSS Grids enligt bild. Välj vilken metod du föredrar.
+                                    Specifika linjenummer med <code class="css"
+                                        style="background-color: rgb(248, 243, 238)">grid-row</code>
+                                    och <code class="css"
+                                        style="background-color: rgb(248, 243, 238)">grid-column</code>
+                                    eller <code class="css"
+                                        style="background-color: rgb(248, 243, 238)">grid-area</code>.
+                                    Använd dig av fix bred och höjd för header, search, navigation och footer. Content
+                                    ska anpassas efter hur mycket innehåll som finns. Aside, adspace anpassar sig efter
+                                    contents höjd.
+                                </p>
+
+
+
+
+
+
+                                <div class="ui compact segment">
+
+                                    <img src="../../../assets/images/css_grid_challenge2.png" alt="CSS Grid"
+                                        width="500px">
+                                </div>
+
+                                <h3 class="ui header"> 3. Gör Layout 1 responsiv </h3>
+
+                                <p>Gör din layout resposiv även för skärmbredd mindre än 600px (mobil). Nu ska alla
+                                    element ordnas till endast en kolumn</p>
+
+                                <h3 class="ui header"> 4. Gör Layout 2 responsiv </h3>
+
+                                <p>Gör din layout resposiv även för skärmbredd mindre än 600px (mobil). Nu ska alla
+                                    element ordnas till endast en kolumn. Dessutom ska de båda adspaceboxarna inte
+                                    visas i mobilläge.</p>
+
+                                <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a
+                                        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
+                                    licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                                        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="ui segment link">
+                            <h4 class="ui header link">Länkar </h4>
+                            <a href="https://learncssgrid.com/" target="_blank">Learning CSS Grid
+                            </a>
+                            <br>
+                            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">
+                                CSS-Tricks: A complete guide to grid
+                            </a>
+                            <br>
+                            <a href="https://gridbyexample.com" target="_blank">
+                                Grid by Example
+
+                            </a>
+                            <br>
+
+                            <a href="https://www.silocreativo.com/en/flexbox-vs-css-grid-practical-example/"
+                                target="_blank">
+                                Flexbox vs CSS Grid: A practical example
+
+                                <br>
+
+
+                                <a href="http://cssgridgarden.com/#sv" target="_blank">
+                                    Grid Garden:Spel att träna på CSS Grid egenskaper
+                                </a>
+                                <br>
+
+                        </div>
+
+                        <div class="ui hidden divider"></div>
+                        <a href="flexbox.html">
+                            <button class="ui left floated labeled icon button">
+                                <i class="left arrow icon"></i>
+                                CSS Flexbox</button>
+                        </a>
+
+
+                        <a href="rwd.html">
+                            <button class="ui right floated labeled icon button">
+                                <i class="right arrow icon"></i>
+                                Responsive Web Design</button>
+                        </a>
+
+
+                    </div>
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js "
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

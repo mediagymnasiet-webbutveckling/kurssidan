@@ -1,0 +1,296 @@
+-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+
+    <title>Webbserverprogrammering 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+
+        <div class="item">
+            <div class="header">
+                Webbserverprogrammering 1
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+
+
+
+        <div class="item">
+            <div class="header">
+                PHP
+            </div>
+            <div class="menu">
+                <a class="item" href="../php/gettingstarted.html">
+                    Komma igång
+                </a>
+                <a class="item" href="../php/phpbasics.html">
+                    PHP Grunder
+                </a>
+                <a class="item" href="../php/filehandle.html">
+                    Filhantering
+                </a>
+                <a class="item" href="../php/sessions.html">
+                    Sessioner
+                </a>
+                <a class="item" href="../php/redirects.html">
+                    Omdirigering
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Databaser
+            </div>
+            <div class="menu">
+                <a class="item" href="intro_db.html">
+                    Introduktion
+                </a>
+                <a class="item" href="connect_db.html">
+                    Databasuppkoppling
+                </a>
+                <a class="item" href="query_db.html">
+                    Databasförfrågningar
+                </a>
+                <a class="item" href="url_parameter.html">
+                    Använda url-parametrar
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">Fördjupning PHP</div>
+            <div class="menu">
+              <a class="item" href="../more_php/php_upload.html">
+                Ladda upp filer med php
+              </a>
+            </div>
+          </div>
+        <div class="item">
+            <div class="header">
+                Säkerhet
+            </div>
+            <div class="menu">
+                <a class="item" href="../security/about.html">Om säkerhet
+                </a>
+                <a class="item" href="../security/sql_injections.html">SQL Injektioner
+                </a>
+                <a class="item" href="../security/crypt_password.html">Kryptera lösenord
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Projektarbete
+            </div>
+            <div class="menu">
+                <a class="item" href="../project/about_project.html"> Om projektarbetet
+                </a>
+                <a class="item" href="../project/project_planning.html"> Projektplanering & rapport
+                </a>
+                <a class="item" href="../project/using_git.html"> Använda Git (frivilligt)
+                </a>
+                <a class="item" href="../project/project_ideas.html"> Valbara projektmoment
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                 <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbserverprogrammering 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../../webb1/info/kursplan.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+        <div class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+                            <!-- Intro HTML-->
+                            <h1 class="ui header"> Hur fungerar en databas?</h1>
+
+
+                            <p>Data som användare ser och behöver skicka in till webbplatser behöver lagras.
+                                För stora webbplatser kan det röra sig om ofantliga mängder, som ex Facebook, där det
+                                behövs sofistikerade system för datalagring. För enklare webbsidor kan det räcka med
+                                endast en databas för sin datalagring. . En databas lagras alltså
+                                data på ett ordnast och strukturat sätt, den är persistent och försvinner inte
+                                om strömmen slås av.
+                            </p>
+
+
+
+                            <div class="ui vertical center aligned segment">
+
+                                <img src="../../../assets/images/about_db.PNG" alt="Om databaser" width="600px">
+                            </div>
+                            <p>PHP som programmeringsspråk är väl anpassat för
+                                databaser och särskilt bra för sin "partner" - MySQL. Den miljö vi arbetar i, d.v.s
+                                WAMP, står alltså M för MySQL. I den här kursen fokuserar
+                                vi främst på hur vi interagerar med en databas för att hämta och lagra data för vår
+                                webbplats. MySQL är en
+                                s.k relationsdatabas och vi kommer inte gå in på hur gör själva tabelldesignen. För
+                                projektarbetet kommer ni att utgå från denna tabelldesign med tabellen user, post och
+                                image. MySQL är en s.k relationsdatabas. Relationer i sådan databas kan förenklat
+                                defineras som en mängd poster i en tabell vars data kan länkas ihop med en data i en
+                                annan tabell. I denna finns det en relation att ett inlägg, tabellen post, har en länk
+                                till
+                                den som skapade den, d.v.s en userId. På samma sätt har en image en relation till en
+                                en postId.
+
+                            </p>
+                            <div class="ui vertical center aligned segment">
+
+                                <img src="../../../assets/images/tabelldesign.PNG" alt="Tabelldesign" width="600px">
+                            </div>
+
+                            <p> Eftersom vi inte går närmare in på hur vi designar en databas i MySQL får ni <a href="../../../assets/files/blog.sql">utifrån
+                                    ovanstående tabelldesign en befintlig som är lagrad i denna .sql-fil</a>. <br />
+                                För att
+                                administrera och se dess innehåll importerar vi den i gränsnittet phpMyadmin som finns
+                                i er installation i XAMPP. I denna video går jag igenom hur ni importerar er databas
+                                lokalt i phpMyAdmin. Vi återkommer till hur vi använder vår databas på servern, d.v.s
+                                webdev. </p>
+                            <div class="ui vertical segment">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/t0wTqBgMw8U"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <div class="ui segment link">
+                                <h4 class="ui header link">Länkar </h4>
+                                <a href="#">#</a>
+                                <br>
+
+
+                            </div>
+
+
+                            <!--   <div class="ui hidden divider"></div>
+                            <a href="#">
+                                <button class="ui left floated labeled icon button">
+                                    <i class="left arrow icon"></i>
+                                    </button>
+                            </a>
+ -->
+
+                            <a href="connect_db.html">
+                                <button class="ui right floated labeled icon button">
+                                    <i class="right arrow icon"></i>
+                                    Databasuppkoppling</button>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

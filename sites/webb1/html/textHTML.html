@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+    <title>Webbutveckling 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+        <div class="item">
+            <div class="header">
+                Webbutveckling 1
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Introduktion till webben
+            </div>
+            <div class="menu">
+                <a class="item" href="../intro/intro.html">
+                    Intro
+                </a>
+                <a class="item" href="../intro/verktyg.html">
+                    Verktyg
+                </a>
+                <a class="item" href="../intro/begrepp.html">
+                    Begrepp
+                </a>
+                <a class="item" href="../intro/historia.html">
+                    Historia
+                </a>
+                <a class="item" href="../intro/teknisk_orientering.html">
+                    Teknisk orientering
+                </a>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                HTML
+            </div>
+            <div class="menu">
+                <a class="item" href="introHTML.html">
+                    Intro till HTML
+                </a>
+                <a class="item" href="grundkodHTML.html">
+                    En webbsidas struktur
+                </a>
+                <a class="item" href="textHTML.html">
+                    Paragrafer och rubriker
+                </a>
+                <a class="item" href="listsHTML.html">
+                    Listor
+                </a>
+                <a class="item" href="linksHTML.html">
+                    Länkar
+                </a>
+                <a class="item" href="imagesHTML.html">
+                    Bilder
+                </a>
+                <a class="item" href="divspan.html">
+                    Div och span
+                </a>
+                <a class="item" href="html5structure.html">
+                    HTML5 Struktur
+                </a>
+                <a class="item">
+                    Tabeller och formulär
+                </a>
+                <a class="item">
+                    Media
+                </a>
+                <a class="item" href="validering.html">
+                    Validering
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                CSS
+            </div>
+            <div class="menu">
+                <a class="item" href="../css/introCSS.html">
+                    Intro till CSS
+                </a>
+                <a class="item" href="../css/moreaboutCSS.html">
+                    Mer om CSS
+                </a>
+                <a class="item" href="../css/boxmodelCSS.html">
+                    Boxmodellen
+                </a>
+                <a class="item" href="../css/edittextCSS.html">
+                    Typografi </a>
+                <a class="item" href="../css/colorbackgroundCSS.html">
+                    Färger och bakgrund
+                </a>
+                <a class="item" href="../css/selectorsCSS.html">
+                    CSS Selektorer
+                </a>
+                <a class="item" href="../css/floatsCSS.html">
+                    Floats
+                </a>
+                <a class="item" href="../css/position_lagerCSS.html">
+                    Positionering och lager
+                </a>
+
+                <a class="item" href="../css/grids.html">
+                    CSS Grid (frivilligt)
+                </a>
+
+                <a class="item" href="../css/flexbox.html">
+                    CSS Flexbox (frivilligt)
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Responsiv Web design
+            </div>
+            <div class="menu">
+                <a class="item" href="../rwd/intro_rwd.html">
+                    Intro RWD
+                </a>
+                <a class="item">
+                    Enheter
+                </a>
+                <a class="item">
+                    Mediaqueries
+                </a>
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Javascript
+            </div>
+            <div class="menu">
+                <a class="item" href="../javascript/intro_js.html">
+                    Intro Javascript
+                </a>
+                <a class="item" href="../javascript/infoga_js.html">
+                    Infoga enkla javascript
+                </a>
+                <a class="item" href="../javascript/domscript.html">
+                    Dokumentobjektsmodellen
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Övrigt
+            </div>
+            <div class="menu">
+                <a href="../annat/upphovsratt.html" class="item">
+                    Upphovsrätt
+                </a>
+                <a href="../annat/integritet.html" class="item">
+                    Integritet och etik
+                </a>
+                <a href="../annat/tillganglighet.html" class="item">
+                    Tillgänglighet </a>
+                <a href="../annat/sakerhet.html" class="item">
+                    Säkerhet
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                 <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbutveckling 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../info/planering.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+        <div class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+
+                        <div class="ui vertical segment">
+
+                            <!-- Intro HTML-->
+                            <h1 class="ui header"> Text och Rubriker </h1>
+                            <div class="ui hidden divider"></div>
+                            <p>
+                                I den här delen ska vi lära oss hur märker upp vi märker upp text och rubriker i HTML,
+                                men även olika typer av listor.
+                            </p>
+
+                        </div>
+
+
+                        <div class="ui vertical segment">
+
+                            <h2 class="ui header"> Rubriker </h2>
+
+
+                            <p>
+                                Rubriker skrivs med &lt;h1&gt;, &lt;h2&gt;…, &lt;h6&gt; beroende på vilken nivå
+                                rubriken har. Precis som en bok har en huvudtitel,
+                                kapitelrubriker, underrubriker är det viktigt att en webbsida följer en logisk ordning
+                                i
+                                rubriken. Den rubrik som är störst, och som webbläsare ser som viktigast är &lt;h1&gt;
+                                och
+                                får förekomma endast en gång på webbsidan. Efter den får man fylla på med underrubriker
+                                &lt;h2&gt;.
+                                &lt;h3&gt;, o.s.v
+                            </p>
+
+                            <div class="ui compact segment">
+                                <pre><code class="html">&lt;h1&gt;Huvudrubrik&lt;/h1&gt;
+&lt;h2&gt;Underrubrik&lt;/h2&gt;                                                
+&lt;h3&gt;Under-underrubrik&lt;/h3&gt;
+                                            
+&lt;h2&gt;Underrubrik&lt;/h2&gt;
+&lt;h3&gt;Under-underrubrik&lt;/h3&gt;       
+                
+&lt;h2&gt;Underrubrik&lt;/h2&gt;
+&lt;h3&gt;Under-underrubrik&lt;/h3&gt;
+</code></pre>
+                                <a href="../../../assets/examples/headings.html">
+                                    <div class="ui right floated small button">Visa sida</div>
+                                </a>
+                            </div>
+
+                            <div class="ui warning message">Det är viktigt att skapa en logisk ordning på rubrikerna!</div>
+                            <div class="ui compact segment">
+                                <pre><code class="html">Det här är inte en logisk ordning av olika rubriker:
+
+&lt;h1&gt;Huvudrubrik&lt;/h1&gt;
+&lt;h2&gt;Underrubrik&lt;/h2&gt;                                                
+&lt;h4&gt;Under-underrubrik&lt;/h4&gt;
+                                            
+&lt;h1&gt;Underrubrik&lt;/h1&gt;
+&lt;h3&gt;Under-underrubrik&lt;/h3&gt;     
+                    
+&lt;h5&gt;Underrubrik&lt;/h5&gt;
+&lt;h3&gt;Under-underrubrik&lt;/h3&gt;
+</code></pre>
+
+
+                            </div>
+
+                            <div class="ui vertical segment">
+
+                                <h2 class="ui header"> Textstycken </h2>
+
+                                <p>
+                                    Textstycken, eller även kallad brödtext märks upp i HTML med &lt;p&gt;-elementet.
+                                    “p” är en förkortning av engelskans “paragraph".
+                                    Nedan ser ni två textstycken inom &lt;p&gt;-elementet. Webbläsaren förstår att all
+                                    text
+                                    inom en paragraf är ett sammanhängande textstycke, men om ett ny paragraf anges
+                                    börjar
+                                    det vanligtvis på en ny rad.
+                                </p>
+
+
+
+                                <div class="ui compact segment">
+                                    <pre><code class="html">&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget 
+mauris pharetra et ultrices neque ornare aenean euismod elementum.
+Eu augue ut lectus arcu bibendum at varius vel pharetra.
+&lt;/p&gt;
+
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget 
+mauris pharetra et ultrices neque ornare aenean euismod elementum.
+Eu augue ut lectus arcu bibendum at varius vel pharetra.
+&lt;/p&gt;
+</code></pre>
+                                    <a href="../../../assets/examples/paragraphs.html">
+                                        <div class="ui right floated small button">Visa sida</div>
+                                    </a>
+
+
+                                </div>
+                                <p>När man skapar webbsidor och ännu inte har tillgång till den text man vill publicera
+                                    finns
+                                    det bra verktyg för att generera text. En klassisk approach inom web design är att
+                                    använda
+                                    en s.k.
+                                    <a href="https://loremipsum.io/" target="_blank">Lorem Ipsum generator</a> som ger
+                                    text
+                                    på latin, där man kan välja antal ord, textstycken etc.
+                                    <br /> Eller varför inte någon roligare?
+                                    <a href="https://loremipsum.io/ultimate-list-of-lorem-ipsum-generators/" target="_blank">Kika
+                                        in här:-)</a>
+
+                                </p>
+                            </div>
+
+
+                            <div class="ui vertical segment">
+                                <h2 class="ui header"> Radbrytning </h2>
+
+                                <p>
+
+                                    Ibland behöver man göra en radbrytning i texten vilket använder taggen &lt;br&gt;
+                                    till. Elementet ska inte användas till
+                                    att skapa större utrymmen (vilket det ibland missvisande används för) utan bara för
+                                    enstaka
+                                    radbrytningar, exempelvis till adresser eller några poesirader.
+
+                                </p>
+                            </div>
+
+                            <div class="ui compact segment">
+                                <pre><code class="html">&lt;p&gt;
+Hodor, hodor. Hodor. Hodor. Hodor, hodor, hodor  &lt;br/&gt;
+hodor. Hodor? HODOR HODOR! &lt;br/&gt;
+HODOR HODOR! Hodor hodor. HODOR HODOR! Hodor... &lt;br/&gt;
+Hodor hodor. Hodor hodor&lt;br/&gt; 
+HODOR! Hodor. 
+&lt;/p&gt;</code></pre>
+                                <a href="../../../assets/examples/hodor.html">
+                                    <div class="ui right floated small button">Visa sida</div>
+                                </a>
+
+
+                            </div>
+                            <div class="ui vertical segment">
+
+                                <h2 class="ui header"> Listor </h2>
+
+                                <p>
+
+                                    Det finns mycket innehåll på webbsidor som struktureras i listor. För att
+                                    strukturera innehållet tydligt och i en viss ordning.
+                                    Listor brukar också användas för att skapa navigationsmenyer. Det finns två olika
+                                    typer
+                                    av listor som är bra att kunna, oordnade och ordnade lister.
+                                    <ul>
+                                        <li> Ordnade listor använder &lt;ol&gt;-elementet och kan ordnas i siffer eller
+                                            bokstavsordning
+                                            m.fl
+                                        </li>
+                                        <li>Oordnade listor använder &lt;ul&gt;-elementet, de har även en punkt framför
+                                            sig.
+                                        </li>
+
+                                    </ul>
+
+                                    <p>
+                                        Elementet &lt;li&gt; motsvarar varje element i listan.
+                                    </p>
+
+                                </p>
+
+                                <h3 class="ui header">Oordnad lista</h3>
+
+                                <div class="ui compact segment">
+                                    <pre><code class="html">&lt;ul&gt;
+    &lt;li&gt;Mc Donalds&lt;/li&gt;      
+    &lt;li&gt;Subway&lt;/li&gt;                  
+    &lt;li&gt;Funky Chicken&lt;/li&gt;
+    &lt;li&gt;Cafeterian&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                                    <a href="../../../assets/examples/ul_list.html">
+                                        <div class="ui right floated small button">Visa sida</div>
+                                    </a>
+                                </div>
+                                <h3 class="ui header">Ordnad lista</h3>
+                                <div class="ui compact segment">
+                                    <pre><code class="html">&lt;ol&gt;
+    &lt;li&gt;Mata hunden&lt;/li&gt;
+    &lt;li&gt;Mata katten&lt;/li&gt;             
+    &lt;li&gt;Gå ut med hunden&lt;/li&gt;
+    &lt;li&gt;Gosa med katten&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+                                    <a href="../../../assets/examples/ol_list.html">
+                                        <div class="ui right floated small button">Visa sida</div>
+                                    </a>
+                                </div>
+
+
+
+                                <div class="ui vertical segment">
+
+                                    <div class="ui message">
+
+                                        <div class="ui header">Semantik betyder</div>
+
+
+                                        <br /> När det gäller semantik inom HTML så handlar det om att man ska använda
+                                        rätt
+                                        element för rätt innehåll. Den handlar om att tilldela en huvudrubrik
+                                        &lt;h1&gt;,
+                                        att en lista ska ligga i list-elementet eller att webbsidan ska ha en relevant
+                                        titel.
+                                        Det handlar om att ge HTML-koden den struktur och den mening den representerar.
+                                        En
+                                        sådan html-kod gör det lättare för sökmotorer att förstå vad som finns på
+                                        webbsidan
+                                        men också för tillängligthetsanpassning (exempelvis skärmläsare för blinda).
+                                        Varteftersom
+                                        i kursen kommer vi att försöka skriva så semantisk korrekta webbsidor som
+                                        möjligt.
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="ui compact warning message">
+
+                                    Obs! Det är viktigt att man märker upp allt innehåll, ingen text får stå utan
+                                    taggar - “naken”.
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="ui segment link">
+                                <h4 class="ui header ">Länkar </h4>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals"
+                                    target="_blank">MDN
+                                    The basics: Heading and paragraphs</a>
+                                <br />
+                                <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank">W3schools
+                                    HTML
+                                    Headings
+                                </a>
+                                <br />
+                                <a href="https://www.w3schools.com/html/html_paragraphs.asp" target="_blank">W3schools
+                                    HTML
+                                    Paragraphs
+                                </a>
+                                <br />
+
+                                <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">W3schools HTML
+                                    Lists</a>
+                                <br />
+
+                                <a href="http://blog.proliit.se/semantik/" target="_blank">Semantik inom HTML</a>
+                            </div>
+
+                            <div class="ui hidden divider"></div>
+
+                            <a href="grundkodHTML.html">
+                                <button class="ui left floated labeled icon button">
+                                    <i class="left arrow icon"></i>
+                                    Tillbaka
+                                </button>
+                            </a>
+
+
+                            <a href="listsHTML.html">
+                                <button class="ui right floated labeled icon button">
+                                    <i class="right arrow icon"></i>
+                                    Listor
+                                </button>
+                            </a>
+
+
+
+                            <div class="three wide column ">
+                                <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="ui inverted vertical center aligned footer segment">
+            <div class="ui container">
+
+                <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+                <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+            </div>
+        </div>
+        <!--end of footer-->
+        <!--Code syntax highlightning-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+        <!--jQuery include -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin=" anonymous "></script>
+        <!-- Semantic UI include script-->
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+        <!--Local script-->
+        <script src="../../../src/script.js "></script>
+</body>
+
+</html>

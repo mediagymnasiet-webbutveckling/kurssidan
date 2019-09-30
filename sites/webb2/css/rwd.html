@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+    <title>Webbutveckling 2</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+        <div class="item">
+            <div class="header">
+                Webbutveckling 2
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a> <a class="item" href="../info/repetitionWebb1.html">
+                    Repetition Webbutveckling 1
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                CSS Fördjupning
+
+            </div>
+            <div class="menu">
+                <a class="item" href="selectorsCSS.html">
+                    CSS Selektorer
+                </a>
+                <a class="item" href="flexbox.html">
+                    CSS Flexbox
+                </a>
+                <a class="item" href="grids.html">
+                    CSS Grid
+                </a>
+                <a class="item" href="rwd.html">
+                    Responsive Web Design
+                </a>
+                <a class="item" href="preprocessors.html">
+                    CSS Preprocessors
+                </a>
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Bilder och Grafik
+
+            </div>
+            <div class="menu">
+                <a class="item" href="../webgraphics/image_gallery.html">
+                    Bildgalleri med Flexbox/CSS Grid
+                </a>
+                <a class="item" href="../webgraphics/responsive_images.html">
+                    Responsiva bilder
+                </a>
+
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                Test
+            </div>
+            <div class="menu">
+                <a class="item" href="../testing/validation.html">
+                    Validering
+                </a>
+                <a class="item" href="../testing/web_support.html">
+                    Webbläsarstöd
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Javascript
+            </div>
+            <div class="menu">
+                <a class="item" href="../javascript/intro_js.html">
+                    Intro Javascript
+                </a>
+                <a class="item" href="../javascript/js_grunder.html">
+                    Javascript Grunder
+                </a>
+                <a class="item" href="../javascript/js_funktioner.html">
+                    Javascript Funktioner
+                </a>
+                <a class="item" href="../javascript/js_dom.html">
+                    Vad är DOM?
+                </a>
+                <a class="item" href="../javascript/js_use_dom.html"> Använda DOM </a>
+                <a class="item" href="../javascript/js_dom_events.html"> DOM Events</a>
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Ramverk och klassbibliotek </div>
+            <div class="menu">
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="header">
+                Animation och interaktiv grafik
+            </div>
+            <div class="menu">
+                <a class="item">
+                </a>
+                <a class="item">
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbutveckling 2</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../../webb1/info/kursplan.html">Webbutveckling 1</a>
+                            <a class="item" href="../info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+
+        <div id="introCSS" class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+
+                            <h1 class="ui header">Responsive Web Design</h1>
+
+
+                        </div>
+
+                        <div class="ui vertical segment">
+                            <h2 class="ui header">1. Sätta viewport</h2>
+
+                            <p>För att sida ska fungera responsivt måste denna rad finnas med i &lt;head&gt;. Den är
+                                viktigt för att en webbläsare ska kontrollera sidans dimension och skalning. </p>
+
+                            <div class="ui compact segment">
+                                <pre><code class="html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="ui vertical segment">
+                            <h2 class="ui header">2. Fluid layout</h2>
+
+                            <p>I en fluid layout varierar storleken på en layout i förhållande till skärmstorleken. Det
+                                nås genom att använda relativa enheter, som % m.fl istället för pixlar. Det innebär
+                                både att layout, sin grid, samt att bilder och text kan variera i förhållande till
+                                skärmstorleken och anpassas till den enhet man använder (desktop, mobil, etc. ).<br />
+                                I de nya teknikerna som CSS Grid och Flexbox följer många anpassningar till responsiv
+                                web design. I CSS Grid finns exempelvis enheten <b>fr</b> och <b>minmax()</b>. I
+                                Flexbox är mycket "flexbilt" och boxar fyller det specificerade utrymmet i layouten.
+
+                            </p>
+
+                            <p> Vid de situationer du måste omvandla pixlar till % gäller följande regel:</p>
+                            <figure>
+                                <img src="../../../assets/images/fluid_layout.png" alt="Fluid layout" width="70%">
+
+                                <figcaption>
+                                    Bildresultat för target context
+                                    Beginner's Guide to Responsive Web Design | Tayloe/Gray
+                                    tayloegray.com
+                                </figcaption>
+                            </figure>
+
+                            <h3 class="ui header">Ändra storlek på text responsivt</h3>
+
+                            <p> Best practice för att ändra storlek på olika text element är att använda sig av
+                                enheterna <b>%</b>, <b>em</b>, <b>rem</b>. Det finns lite olika angreppsätt om vilken
+                                som är bäst. I detta exempel visar jag hur man kan
+                                använda rem som baseras på font-size relativt till rot-elementet, d.v.s html. Genom att
+                                sätta all text samt margin/rem baserade på denna kan man förändra alla element genom
+                                att endast förändra font-size i roten. <br>
+                                <a href="https://gregrickaby.com/2013/05/using-the-golden-ratio-and-rems/"
+                                    target="_blank">Se
+                                    denna
+                                    sida för hur detta kan göras</a>
+
+
+                            </p>
+                            <p>REM Units in Responsive Design</p>
+                            <p data-height="265" data-theme-id="dark" data-slug-hash="oaBrep"
+                                data-default-tab="html,result" data-user="sandraMG"
+                                data-pen-title="REM Units in Responsive Design" class="codepen">See
+                                the Pen <a href="https://codepen.io/sandraMG/pen/oaBrep/">REM Units in Responsive
+                                    Design</a> by Sandra (<a href="https://codepen.io/sandraMG">@sandraMG</a>) on <a
+                                    href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                            <h3 class="ui header">Göra bilder flexibla</h3>
+
+                        </div>
+                        <div class="ui vertical segment">
+                            <h2 class="ui header"> 3. Mediaqueries</h2>
+
+
+                        </div>
+
+
+                        <div class="ui vertical segment">
+                            <h2 class="ui header">Desktop vs Mobile-first</h2>
+                            <p><a href="https://www.lukew.com/presos/preso.asp?26" target="_blank">Inspiration från
+                                    första förespråkaren till mobile-first </a> </p>
+
+                            <div class="ui compact segment">
+                                <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+
+&lt;title>Desktop first vs. Mobile first&lt;/title&gt;
+&lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt; INNEHÅLL&lt;/h1&gt;
+    &lt;p&gt; Mer innehåll...&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                            </div>
+                            <h3 class="ui header">Att använda Desktop-first</h3>
+                            <p>I detta fall används <b>max-width</b> i mediaquery.</p>
+                            <div class="ui compact segment">
+
+                                <pre><code class="css">/*DESKTOP LAYOUT*/
+/*  Fråm 600px och uppåt */
+
+body {
+    background-color: #ccf;
+}
+
+h1 {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*FÖRÄNDRAD LAYOUT FÖR MOBIL*/
+/*Från 0px till 600px*/
+@media screen and (max-width: 600px) {
+    body {
+    background-color: #cfc;
+    }
+    h1 {
+    font-size: 16px;
+    }
+}</code></pre>
+                            </div>
+                            <h3 class="ui header">Att använda Mobile-first</h3>
+                            <p>I detta fall används <b>min-width</b> i mediaquery.</p>
+                            <div class="ui compact segment">
+
+                                <pre><code class="css">/*LAYOUT FÖR MOBIL */
+/*Från 0px till 600px*/
+body {
+background-color: #cfc;
+}
+
+h1 {
+font-size: 16px;
+
+}
+
+
+
+/*FÖRÄNDRAD LAYOUT FÖR DESKTOP*/
+/* Från 600px och uppåt */
+@media screen and (min-width: 600px) {
+body {
+    background-color: #ccf;
+}
+
+h1 {
+    font-size: 22px;
+}
+}                               
+                            </code></pre>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="ui segment link">
+                            <h4 class="ui header link">Länkar </h4>
+                            <a href="#" target="_blank">
+                            </a>
+                            <br>
+                            <a href="#" target="_blank">
+
+                            </a>
+                            <br>
+
+
+                        </div>
+
+                        <div class="ui hidden divider"></div>
+                        <a href="grids.html">
+                            <button class="ui left floated labeled icon button">
+                                <i class="left arrow icon"></i>
+                                CSSGrids</button>
+                        </a>
+
+
+                        <a href="#">
+                            <button class="ui right floated labeled icon button">
+                                <i class="right arrow icon"></i>
+                                ?</button>
+                        </a>
+
+
+                    </div>
+                    <div class="three wide column ">
+                        <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js "
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>

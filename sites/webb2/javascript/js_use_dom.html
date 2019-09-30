@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css" />
+    <title>Webbutveckling 2</title>
+  </head>
+
+  <body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+      <div class="item">
+        <div class="header">Webbutveckling 2</div>
+        <div class="menu">
+          <a class="item" href="../info/planering.html"> Planering </a>
+          <a class="item" href="../info/kursplan.html"> Kursens innehåll </a>
+          <a class="item" href="../info/repetitionWebb1.html">
+            Repetition Webbutveckling 1
+        </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">CSS Fördjupning</div>
+        <div class="menu">
+          <a class="item" href="selectorsCSS.html"> CSS Selektorer </a>
+          <a class="item" href="flexbox.html"> CSS Flexbox </a>
+          <a class="item" href="grids.html"> CSS Grid </a>
+          <a class="item" href="rwd.html"> Responsive Web Design </a>
+          <a class="item" href="preprocessors.html"> CSS Preprocessors </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">Bilder och Grafik</div>
+        <div class="menu">
+          <a class="item" href="../webgraphics/image_gallery.html">
+            Bildgalleri med Flexbox/CSS Grid
+          </a>
+          <a class="item" href="../webgraphics/responsive_images.html">
+            Responsiva bilder
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Test</div>
+        <div class="menu">
+          <a class="item" href="validation.html"> Validering </a>
+          <a class="item" href="web_support.html"> Webbläsarstöd </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">Javascript</div>
+        <div class="menu">
+          <a class="item" href="intro_js.html"> Intro Javascript </a>
+          <a class="item" href="js_grunder.html"> Javascript Grunder </a>
+          <a class="item" href="js_funktioner.html"> Javascript Funktioner </a>
+          <a class="item" href="js_dom.html"> Vad är DOM? </a>
+          <a class="item" href="js_use_dom.html"> Använda DOM </a>
+          <a class="item" href="js_dom_events.html"> DOM Events</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">Ramverk och klassbibliotek</div>
+        <div class="menu">
+          <a class="item"> </a> <a class="item"> </a> <a class="item"> </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">Animation och interaktiv grafik</div>
+        <div class="menu"><a class="item"> </a> <a class="item"> </a></div>
+      </div>
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+      <!-- Top menu-->
+      <div class="top ui fixed menu">
+        <a class="item sidebar"> <i class="icon big sidebar"></i>Meny </a>
+        <a class="item"> <div class="ui header">Webbutveckling 2</div> </a>
+        <div class="right menu">
+          <div class="right menu">
+            <div class="item">
+              <a href="../../../index.html">
+                <img src=" ../../../assets/images/mglogo.jpg " width="100px " />
+              </a>
+            </div>
+            <div class="ui dropdown item">
+              Kurser <i class="dropdown icon"></i>
+              <div class="menu">
+                <a class="item" href="../../webb1/info/kursplan.html"
+                  >Webbutveckling 1</a
+                >
+                <a class="item" href="../info/kursplan.html"
+                  >Webbutveckling 2</a
+                >
+                <a class="item" href="../../webbsev1/info/kursplan.html"
+                  >Webbserverprogrammering 1</a
+                >
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui icon input">
+                <input type="text" placeholder="Sök..." />
+                <i class="search link icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of top menu-->
+      </div>
+      <!--end of pusher-->
+
+      <div class="ui main container">
+        <div class="ui grid">
+          <div class="row">
+            <div class="three wide column">
+              <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+            </div>
+            <div class="ten wide column">
+              <div class="ui vertical segment">
+                <h1 class="ui header">Att använda sig av DOM med Javascript</h1>
+
+                <div class="ui vertical segment">
+                  <p>
+                    Syftet med att använda sig av DOM är att man kan förändra en
+                    webbsidas innehåll eller utseende enbart genom Javascript.
+                    Detta är användbart när vi kommer till att lära oss hur man
+                    kan trigga händelser med att klicka på en knapp eller andra
+                    interaktioner från en användare. Vi har inte kommit till att
+                    lära oss detta ännu utan i detta avsnitt kommer vi enbart
+                    fokusera på att ändra eller manipulera element genom DOM.
+                  </p>
+
+                  <p>
+                    Själva proceduren är att man alltid först vill
+                    <strong>HITTA</strong> en referens till det element som man
+                    sedan vill <strong> ÄNDRA </strong>. Exempelvis att ändra
+                    textinnehåll, innehåll med html eller ändra i style genom
+                    CSS. Man kan också ändra attribut till element.
+                  </p>
+                  <p>
+                    Att hitta en referens till ett element gör man genom att
+                    välja en lämplig metod, s.k. DOM Selektorer.
+                  </p>
+                  <h2 class="ui header red">HITTA element</h2>
+                  <p>
+                    Det finns olika metoder att hitta element med Javascript,
+                    vilket kallas för <strong>DOM Selektorer</strong>. Vi kommer
+                    framförallt att lära oss tre olika metoder för att selektera
+                    vilka html-element man vil hitta. Det finns även fler, men
+                    man kommer långt med att enbart lära sig följande metoder:
+                  </p>
+                  <strong>
+                    <ol>
+                      <li>getElementById()</li>
+                      <li>querySelector()</li>
+                      <li>querySelectorAll()</li>
+                    </ol>
+                  </strong>
+                  <p>Här nedan förklaras skillnaden mellan dessa.</p>
+                  <h2 class="ui header">1. getElementById()</h2>
+                  <p>
+                    Denna metod tar en sträng som argument och returner det
+                    matchande elementet med det <strong>id</strong> som är
+                    angivet i elementet. Nedan är ett exempel hur man kan hitta
+                    ett element med ett visst id. Referensen till elementer
+                    lagras i variabeln <i>element</i>.
+                  </p>
+
+                  <p>
+                    Om man vill ändra nodens innehåll med en ny text kan man
+                    använda metoden <b>textContent</b>.
+                  </p>
+                  <div class="ui segment">
+                    <script
+                      async
+                      src="//jsfiddle.net/sandral/q0p8fzyx/embed/js,html,result/"
+                    ></script>
+                  </div>
+
+                  <p>
+                    Notera att det står
+                    <strong> document.getElementById()</strong>. Varför? Jo vi
+                    vill ju leta i document-objektet som innehåller hela
+                    webbsidan.
+                  </p>
+                  <br />
+                  <h2 class="ui header">2. querySelector()</h2>
+                  <p>
+                    Denna metod är praktisk, till skillnad från
+                    getElementById(), då det argument man tar in är samma som
+                    CSS Selektorer. Denna returnerar det första elementet med
+                    matchande selektor den stöter på.
+                  </p>
+                  <p>
+                    I exemplet nedan hittar metoden elementet med class="bold".
+                  </p>
+                  <div class="ui  segment">
+                    <script
+                      async
+                      src="//jsfiddle.net/sandral/eq6coguj/embed/"
+                    ></script>
+                  </div>
+                  <br />
+                  <h2 class="ui header">3. querySelectorAll()</h2>
+                  <p>
+                    Denna metod är ungefär samma som querySelector() men
+                    skillnaden ligger i att den returnerar en lista på alla
+                    noder som matchar CSS-selektorn. I exemplet finns det flera
+                    li-element där li-element på arrayposition 2 ändras till en
+                    ny text.
+                  </p>
+                  <div class="ui  segment">
+                    <script
+                      async
+                      src="//jsfiddle.net/sandral/tz2w4vmg/2/embed/js,html,result/"
+                    ></script>
+                  </div>
+                </div>
+                <div class="ui vertical segment">
+                  <h2 class="ui header red">ÄNDRA element</h2>
+                  <p>För de element vi hittar kan vi:</p>
+                  <ul class="ui list">
+                    <li>Ändra innehåll (text/element)</li>
+                    <li>Ändra style</li>
+                    <li>Ändra attribut (src, href, etc)</li>
+                    <li>Lägga till eller ta bort classer</li>
+                    <li>m.m om man vill lära sig mer...</li>
+                  </ul>
+
+                  <p>
+                    I exemplen ovan visas hur <b>textContent</b> används för att
+                    ändra textinnehållet i en nod. En annan metod som ändrar
+                    innehållet i ett element är <b>innerHtML</b> där skillnaden
+                    ligger i att man även kan inkludera html-taggar.
+                  </p>
+                  <div class="ui  segment">
+                    <script
+                      async
+                      src="//jsfiddle.net/sandral/gd2apew4/embed/js,html,result/"
+                    ></script>
+                  </div>
+                  <p>
+                    Vi kan även ändra utseendet genom CSS och <b>style</b> för
+                    element
+                  </p>
+                  <div class="ui  segment">
+                    <script
+                      async
+                      src="//jsfiddle.net/sandral/6uqpm4tv/1/embed/js,html,result/"
+                    ></script>
+                  </div>
+                  <p>
+                    Det är dock inte rekommenderat att förändra style om man ska
+                    utföra omfattande förändringar i style.
+                  </p>
+                  <p>
+                    Istället för att ändra style med Javascript kan vi använda
+                    oss av lägga till, ta bort eller toggla ett attribut som
+                    exempelvis class="some-class" på det element vi vill
+                    förändra style. Detta kan göras med <b>classList.add()</b>,
+                    <b>classList.remove()</b> eller <b>classList.toggle()</b>.
+                    Då kommer elementet bli tilldelat stilregler som finns
+                    angivna i CSS som hör till den selektorn.
+                  </p>
+                  <div class="ui  segment">
+                    <script
+                      <script
+                      async
+                      src="//jsfiddle.net/sandral/61c5rxbd/5/embed/"
+                    ></script>
+                  </div>
+
+                  <p>
+                    Vi kan också hämta eller ändra ett elements attribut med
+                    <b>getAttribute()</b> och <b>setAttribute()</b>. Bra exempel
+                    på detta är att komma åt "href" i a-taggen eller ändra en
+                    bildkälla med "src" i img-taggen. Just att ändra vilken
+                    filreferens ett img-element har är användbart till bildspel.
+                  </p>
+                  <div class="ui  segment">
+                    <script
+                      async
+                      src="//jsfiddle.net/sandral/hyvr10sk/embed/js,html,result/"
+                    ></script>
+                  </div>
+                </div>
+                <div class="ui vertical segment">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/phxxnQaBUOE"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="ui vertical segment">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1qUHZs3yEPw"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="ui vertical segment">
+                  <iframe
+                    src="//slides.com/sandralarsson-1/deck-6/embed?style=light"
+                    width="576"
+                    height="420"
+                    scrolling="no"
+                    frameborder="0"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <!--   <div class="ui vertical segment">
+                            </div> -->
+                <div class="ui segment link">
+                  <h4 class="ui header ">Länkar</h4>
+                  <a href="http://javascript.info/" target="_blank"
+                    >Javascript Info - bra referensguide</a
+                  >
+                  <br />
+                  <a href="http://eloquentjavascript.net/" target="_blank"
+                    >Eloquent Javascript - bra gratis bok för dig som vill gå på
+                    djupet</a
+                  >
+                  <br />
+                  <a href="https://www.w3schools.com/js/" target="_blank"
+                    >W3 Schools Javascript Tutorial</a
+                  >
+                  <br />
+                </div>
+
+                <div class="ui hidden divider"></div>
+
+                <a href="js_funktioner.html">
+                  <button class="ui left floated labeled icon button">
+                    <i class="left arrow icon"></i> Javascript Funktioner
+                  </button>
+                </a>
+
+                <!-- 
+                        <a href="#">
+                            <button class="ui right floated labeled icon button">
+                                <i class="right arrow icon"></i>
+                                ?</button>
+                        </a> -->
+              </div>
+              <div class="three wide column ">
+                <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+      <div class="ui container">
+        <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+        <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+      </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js "
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin=" anonymous "
+    ></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+  </body>
+</html>

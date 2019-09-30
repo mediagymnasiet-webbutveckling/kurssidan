@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floats</title>
+    <link rel="stylesheet" typ="text/css" href="style.css">
+</head>
+
+<body>
+    <style>
+        img {
+            float: left;
+            font-size: .7em;
+            margin: 1em;
+        }
+
+        p {
+            border: 2px dashed red;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+    <p class="clearfix">
+        <img src="https://picsum.photos/150/150/?random">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat obcaecati, quae dicta, minima excepturi
+        ratione.
+
+
+
+    </p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+  <link rel="stylesheet" type="text/css" href="../../../style/style.css" />
+  <title>Webbutveckling 1</title>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="ui sidebar vertical menu">
+    <div class="item">
+      <div class="header">Webbutveckling 1</div>
+      <div class="menu">
+        <a class="item" href="../info/planering.html"> Planering </a>
+        <a class="item" href="../info/kursplan.html"> Kursens innehåll </a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">
+        Introduktion till webben
+      </div>
+      <div class="menu">
+        <a class="item" href="../intro/intro.html">
+          Intro
+        </a>
+        <a class="item" href="../intro/verktyg.html">
+          Verktyg
+        </a>
+        <a class="item" href="../intro/begrepp.html">
+          Begrepp
+        </a>
+        <a class="item" href="../intro/historia.html">
+          Historia
+        </a>
+        <a class="item" href="../intro/teknisk_orientering.html">
+          Teknisk orientering
+        </a>
+      </div>
+
+    </div>
+    <div class="item">
+      <div class="header">HTML</div>
+      <div class="menu">
+        <a class="item" href="introHTML.html"> Intro till HTML </a>
+        <a class="item" href="grundkodHTML.html"> En webbsidas struktur </a>
+        <a class="item" href="textHTML.html"> Paragrafer och rubriker </a>
+        <a class="item" href="listsHTML.html"> Listor </a>
+        <a class="item" href="linksHTML.html"> Länkar </a>
+        <a class="item" href="imagesHTML.html"> Bilder </a>
+        <a class="item" href="divspan.html"> Div och span </a>
+        <a class="item" href="html5structure.html"> HTML5 Struktur </a>
+        <a class="item"> Tabeller och formulär </a>
+        <a class="item"> Media </a>
+        <a class="item" href="validering.html"> Validering </a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="header">CSS</div>
+      <div class="menu">
+        <a class="item" href="../css/introCSS.html"> Intro till CSS </a>
+        <a class="item" href="../css/moreaboutCSS.html"> Mer om CSS </a>
+        <a class="item" href="../css/boxmodelCSS.html"> Boxmodellen </a>
+        <a class="item" href="../css/edittextCSS.html"> Typografi </a>
+        <a class="item" href="../css/colorbackgroundCSS.html">
+          Färger och bakgrund
+        </a>
+        <a class="item" href="../css/selectorsCSS.html"> CSS Selektorer </a>
+        <a class="item" href="../css/floatsCSS.html"> Floats </a>
+        <a class="item" href="../css/position_lagerCSS.html">
+          Positionering och lager
+        </a>
+
+        <a class="item" href="../css/grids.html"> CSS Grid (frivilligt) </a>
+
+        <a class="item" href="../css/flexbox.html">
+          CSS Flexbox (frivilligt)
+        </a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="header">Responsiv Web design</div>
+      <div class="menu">
+        <a class="item" href="../rwd/intro_rwd.html"> Intro RWD </a>
+        <a class="item"> Enheter </a> <a class="item"> Mediaqueries </a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">Javascript</div>
+      <div class="menu">
+        <a class="item" href="../javascript/intro_js.html">
+          Intro Javascript
+        </a>
+        <a class="item" href="../javascript/infoga_js.html">
+          Infoga enkla javascript
+        </a>
+        <a class="item" href="../javascript/domscript.html">
+          Dokumentobjektsmodellen
+        </a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">
+        Övrigt
+      </div>
+      <div class="menu">
+        <a href="../annat/upphovsratt.html" class="item">
+          Upphovsrätt
+        </a>
+        <a href="../annat/integritet.html" class="item">
+          Integritet och etik
+        </a>
+        <a href="../annat/tillganglighet.html" class="item">
+          Tillgänglighet </a>
+        <a href="../annat/sakerhet.html" class="item">
+          Säkerhet
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <!-- end of sidebar -->
+  <!-- Pusher -->
+  <div class="pusher">
+    <!-- Top menu -->
+    <div class="top ui fixed menu">
+      <a class="item sidebar">  <i class="icon big sidebar"></i>Meny </a>
+      <a class="item">
+        <div class="ui header">Webbutveckling 1</div>
+      </a>
+      <div class="right menu">
+        <div class="right menu">
+          <div class="item">
+            <a href="../../../index.html">
+              <img src=" ../../../assets/images/mglogo.jpg " width="100px " />
+            </a>
+          </div>
+          <div class="ui dropdown item">
+            Kurser <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item" href="../info/planering.html">Webbutveckling 1</a>
+              <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+              <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="ui icon input">
+              <input type="text" placeholder="Sök..." />
+              <i class="search link icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of top menu -->
+    </div>
+    <!-- end of pusher -->
+    <div class="ui main container">
+      <div class="ui  grid">
+        <div class="row">
+          <div class="three wide column">
+            <!--
+                <div class="ui grey segment">
+                  <p>three wide column</p>
+                </div>
+              -->
+          </div>
+          <div class="ten wide column">
+            <div class="ui vertical segment">
+              <!-- Intro HTML -->
+              <h1 class="ui header">Länkar och navigering</h1>
+              <div class="ui hidden divider"></div>
+              <p>
+                Länkar är det som gör World Wide Webb (www) unikt. Utan dem
+                skulle vi inte kunna surfa runt och upptäcka allt som finns på
+                internet, d.v.s kunna navigera mellan webbsidor och inom en
+                webbplats.
+              </p>
+              <p>
+                När du skapar en länk använder du taggen &lt;a&gt;, där "a"
+                står för "anchor". För att veta var man ska navigeras måste
+                man ange attributet "href" som står för hyperlink reference.
+              </p>
+              <p>
+                Det finns olika typer av länkar beroende på om om surfar
+                vidare på den webbplats du besöker, navigera till annan
+                webbplats eller navigera inom den sida du står på.
+              </p>
+            </div>
+
+            <div class="ui vertical segment">
+              <h2 class="ui header">Interna länkar</h2>
+
+              <p>
+                Länkar till andra dokument på din webbsida. Det som är viktigt
+                att tänka på är hur sökvägen skrivs. I exemplet är sökvägarna
+                relativa, d.v.s de utgår från nuvarande position av
+                html-dokumentet för att referera till en annan i
+                mappstrukturen.
+              </p>
+
+              <div class="ui compact segment">
+                <pre><code class="html">&lt;!-- Intern länk inom webbplatsen--&gt;
+
+&lt;!-- När man klickar på länken dirigeras man om till 
+html-sidan som ligger i samma mapp--&gt;
+&lt;a href="about.html"&gt; Om oss &lt;/a&gt;
+
+
+&lt;!-- När man klickar på länken dirigeras man om till 
+html-sidan som ligger i en undermappp--&gt;
+&lt;a href="news/page_1.html"&gt; Nyheter &lt;/a&gt;
+
+&lt;!-- När man klickar på länken dirigeras man om till 
+html-sidan som ligger i en övermapp--&gt;
+&lt;a href="../contact.html"&gt; Kontakta oss &lt;/a&gt;
+</code></pre>
+              </div>
+
+              <p>
+                Vi kommer att återkomma till hur man skapar relativa sökvägar
+                och en tydlig mappstruktur. Det är även bra att kunna när man
+                infogar bilder och andra filer.
+              </p>
+            </div>
+            <div class="ui vertical segment">
+              <h2 class="ui header">Externa länkar</h2>
+
+              <p>
+                När du klickar på länken kommer du till mediagymnasiet
+                hemsida. När du skriver externa länkar måste url:en vara
+                fullständiga inklusive "http://". Ett bra attribut att lägga
+                till är target="_blank" som gör att länken man klickar på
+                öppnas i nytt fönster.
+              </p>
+
+              <div class="ui compact segment">
+                <pre><code class="html">
+&lt;!-- Extern länk till MG:S hemsida--&gt;
+&lt;!-- Med attributet target="_blank" öpnnas sidan i ny flik--&gt;
+&lt;a href="https://www.mediagymnasiet.se" target="_blank">
+    Länk till MG:s webbsida 
+&lt;/a&gt;
+</code></pre>
+              </div>
+            </div>
+
+            <div class="ui vertical segment">
+              <h2 class="ui header">Ankare/Bokmärke</h2>
+
+              <p>
+                En webbsida kan innehålla mycket information och man behöver
+                scrolla för att kunna se allt innehåll. Då är det praktiskt
+                att skapa en ankare som refererar till ett annat element på
+                samma sida. Då man måste man ange ett "id" som attribut till
+                det element man vill kunna navigera till.
+              </p>
+
+              <div class="ui compact segment">
+                <pre><code class="html">&lt;!--- Ett ankare som refererar till id="kontakt"--&gt;
+&lt;a href="#kontakt">Kontakt&lt;/a&gt;
+
+&lt;!-- Denna sida har mycket text och man behöver scrolla --&gt;
+
+&lt;!-- När man klickar på länken scrollas man hit --&gt;
+&lt;p id="kontakt"> Här står kontaktupgifter &lt;/p&gt;
+</code></pre>
+              </div>
+            </div>
+            <div class="ui vertical segment">
+              <h2 class="ui header">Länkar behöver inte bara vara text</h2>
+
+              <p>
+                I exemplen har vi endast visat hur vi markerar text som
+                länkar. Men egentligen kan man skapa länkar av vilket
+                html-element som helst, d.v.s omsluta med a-taggen. Förutom
+                text är det väldigt vanligt att man använder bilder eller
+                button-elementet som länkar.
+              </p>
+            </div>
+            <div class="ui compact warning message">
+              Per default, d.v.s en webbläsares grundinställningar, får alla
+              länkar en blå färg. Detta kan man ändra på när vi kommer till
+              delen om CSS och styla webbsidor.
+            </div>
+
+            <div class="ui segment link">
+              <h4 class="ui header ">Länkar</h4>
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+                target="_blank">MDN What is a hyperlink?</a>
+              <br />
+              <a href="http://webbling.se/index.php/Hyperl%C3%A4nkar_-_Att_l%C3%A4nka_till_en_annan_sidas" target="_blank">Webbling
+                - Att länka till annan sida</a>
+              <br />
+            </div>
+
+            <div class="ui hidden divider"></div>
+
+            <a href="listsHTML.html">
+              <button class="ui left floated labeled icon button">
+                <i class="left arrow icon"></i> Tillbaka
+              </button>
+            </a>
+
+            <a href="imagesHTML.html">
+              <button class="ui right floated labeled icon button">
+                <i class="right arrow icon"></i> Bilder
+              </button>
+            </a>
+
+            <div class="three wide column ">
+              <!--
+                  <div class="ui grey segment ">
+                    <p>three wide column</p>
+                  </div>
+                -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="ui inverted vertical center aligned footer segment">
+    <div class="ui container">
+      <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+      <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+    </div>
+  </div>
+  <!-- end of footer -->
+  <!-- Code syntax highlightning -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+  <!-- jQuery include -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin=" anonymous "></script>
+  <!-- Semantic UI include script -->
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+  <!-- Local script -->
+  <script src="../../../src/script.js "></script>
+</body>
+
+</html>

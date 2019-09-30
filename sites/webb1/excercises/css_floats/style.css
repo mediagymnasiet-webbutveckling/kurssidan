@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  border: 2px dashed red;
+}
+
+.photo {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

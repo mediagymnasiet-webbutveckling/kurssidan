@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
+    <style type="text/css">
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead {
+        background-color: #f68933 !important;
+        background-image: linear-gradient(
+          to right bottom,
+          #f27009,
+          #f37c24,
+          #f38837,
+          #f49349,
+          #f49e5a
+        ) !important;
+      }
+
+      /* .pusher.masthead {
+
+            background-color: #f68933 !important;
+
+            background-image: radial-gradient(circle, #f68933, #f59344, #f49d54, #f3a764, #f2b075);
+
+            background-image: linear-gradient(to right bottom, #f68933, #f59344, #f49d54, #f3a764, #f2b075);
+
+            background-image: linear-gradient(to right bottom, #f68933, #f69342, #f59c51, #f5a560, #f4ae6f);
+        } */
+
+      .masthead.segment {
+        min-height: 700px;
+        padding: 1em 0em;
+      }
+
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+
+      .masthead h1.ui.header {
+        margin-top: 3em;
+        margin-bottom: 0em;
+        font-size: 4em;
+        font-weight: 800;
+      }
+
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+        margin-bottom: 2em;
+      }
+
+      .masthead .ui.buttons {
+        font-size: 1em;
+        margin: 30px auto;
+        display: block;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .masthead .ui.buttons .ui.button {
+        margin: 10px;
+        float: left;
+        border-radius: 500px;
+      }
+
+      .ui.vertical.stripe {
+        padding: 8em 0em;
+      }
+
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .ui.fixed.menu {
+          display: none !important;
+        }
+
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+
+        .masthead.segment {
+          min-height: 350px;
+          padding: 2em !important;
+        }
+
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+
+        .masthead .ui.buttons {
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 10px;
+        }
+      }
+    </style>
+
+    <script>
+      $(document).ready(function() {
+        // fix menu when passed
+        $(".masthead").visibility({
+          once: false,
+          onBottomPassed: function() {
+            $(".fixed.menu").transition("fade in");
+          },
+          onBottomPassedReverse: function() {
+            $(".fixed.menu").transition("fade out");
+          }
+        });
+
+        // create sidebar and attach to menu open
+        $(".ui.sidebar").sidebar("attach events", ".toc.item");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Following Menu -->
+    <div class="ui large top fixed hidden menu">
+      <div class="ui container">
+        <a class="active item">Start</a> <a class="item">Länk 1</a>
+        <a class="item">Länk 2</a> <a class="item">länk 2</a>
+        <!--
+          <div class="right menu">
+              <div class="item">
+                  <a class="ui button">Log in</a>
+              </div>
+              <div class="item">
+                  <a class="ui primary button">Sign Up</a>
+              </div>
+          </div>
+        -->
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="active item">Start</a> <a class="item">Länk 1</a>
+      <a class="item">Länk 2</a> <a class="item">länk 2</a>
+    </div>
+
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui  vertical masthead center aligned segment">
+        <div class="ui text container">
+          <h1 class="ui  header">Webbutveckling på Mediagymnasiet</h1>
+          <h2>Do whatever you want when you want to, but do it.</h2>
+        </div>
+        <div class="ui buttons">
+          <a
+            href="sites/webb1/info/planering.html"
+            class="large basic inverted animated fade ui button"
+          >
+            <div class="visible content">Webbutveckling 1</div>
+            <div class="hidden content">Webbutveckling 1</div>
+          </a>
+          <a
+            href="sites/webb2/info/planering.html"
+            class="large basic inverted animated fade ui button"
+          >
+            <div class="visible content">Webbutveckling 2</div>
+            <div class="hidden content">Webbutveckling 2</div>
+          </a>
+          <a
+            href="sites/webbsev1/info/planering.html"
+            class="large basic inverted animated fade ui button"
+          >
+            <div class="visible content">Webbserverprogrammering 1</div>
+            <div class="hidden content">Webbserverprogrammering 1</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="ui vertical  stripe segment">
+        <div class="ui text container">
+          <h4 class="ui horizontal header divider">
+            <a href="#">Elevarbeten</a>
+          </h4>
+          <h3 class="ui  header">Mediagymnasiets Webbserver</h3>
+          <p>Här kan du se ditt och andras webbpublikationer.</p>
+          <a href="http://webdev.megy.se" target="_blank"
+            ><button class="ui labeld icon button">
+              <i class="large user icon"></i>
+              <i class="large right arrow icon"></i></button
+          ></a>
+        </div>
+      </div>
+
+      <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+          <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery include -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Semantic UI include script -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+    <!-- Local script -->
+    <script src="src/script.js"></script>
+  </body>
+</html>

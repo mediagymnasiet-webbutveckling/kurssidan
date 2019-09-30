@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css">
+    <title>Webbutveckling 1</title>
+</head>
+
+<body>
+    <!--Sidebar-->
+    <div class="ui sidebar vertical menu">
+
+        <div class="item">
+            <div class="header">
+                Webbutveckling 1
+            </div>
+            <div class="menu">
+                <a class="item" href="../info/planering.html">
+                    Planering
+                </a>
+                <a class="item" href="../info/kursplan.html">
+                    Kursens innehåll
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Introduktion till webben
+            </div>
+            <div class="menu">
+                <a class="item" href="../intro/intro.html">
+                    Intro
+                </a>
+                <a class="item" href="../intro/verktyg.html">
+                    Verktyg
+                </a>
+                <a class="item" href="../intro/begrepp.html">
+                    Begrepp
+                </a>
+                <a class="item" href="../intro/historia.html">
+                    Historia
+                </a>
+                <a class="item" href="../intro/teknisk_orientering.html">
+                    Teknisk orientering
+                </a>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="header">
+                HTML
+            </div>
+            <div class="menu">
+                <a class="item" href="../html/introHTML.html">
+                    Intro till HTML
+                </a>
+                <a class="item" href="../html/grundkodHTML.html">
+                    En webbsidas struktur
+                </a>
+                <a class="item" href="../html/textHTML.html">
+                    Paragrafer och rubriker
+                </a>
+                <a class="item" href="../html/listsHTML.html">
+                    Listor
+                </a>
+                <a class="item" href="../html/linksHTML.html">
+                    Länkar
+                </a>
+                <a class="item" href="../html/imagesHTML.html">
+                    Bilder
+                </a>
+                <a class="item" href="../html/divspan.html">
+                    Div och span
+                </a>
+                <a class="item" href="../html/html5structure.html">
+                    HTML5 Struktur
+                </a>
+                <a class="item">
+                    Tabeller och formulär
+                </a>
+                <a class="item">
+                    Media
+                </a>
+                <a class="item" href="../html/validering.html">
+                    Validering
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                CSS
+            </div>
+            <div class="menu">
+                <a class="item" href="../css/introCSS.html">
+                    Intro till CSS
+                </a>
+                <a class="item" href="../css/moreaboutCSS.html">
+                    Mer om CSS
+                </a>
+                <a class="item" href="../css/boxmodelCSS.html">
+                    Boxmodellen
+                </a>
+                <a class="item" href="../css/edittextCSS.html">
+                    Typografi </a>
+                <a class="item" href="../css/colorbackgroundCSS.html">
+                    Färger och bakgrund
+                </a>
+                <a class="item" href="../css/selectorsCSS.html">
+                    CSS Selektorer
+                </a>
+                <a class="item" href="../css/floatsCSS.html">
+                    Floats
+                </a>
+                <a class="item" href="../css/position_lagerCSS.html">
+                    Positionering och lager
+                </a>
+                <a class="item" href="../css/layout_floats.html">
+                    Layout med floats
+                </a>
+
+                <a class="item" href="../css/grids.html">
+                    CSS Grid (frivilligt)
+                </a>
+
+                <a class="item" href="../css/flexbox.html">
+                    CSS Flexbox (frivilligt)
+                </a>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Responsiv Web design
+            </div>
+            <div class="menu">
+                <a class="item">
+                    Intro RWD
+                </a>
+                <a class="item">
+                    Enheter
+                </a>
+                <a class="item">
+                    Mediaqueries
+                </a>
+
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                Javascript
+            </div>
+            <div class="menu">
+                <a class="item" href="../javascript/intro_js.html">
+                    Intro Javascript
+                </a>
+                <a class="item" href="../javascript/infoga_js.html">
+                    Infoga enkla javascript
+                </a>
+                <a class="item" href="../javascript/domscript.html">
+                    Dokumentobjektsmodellen
+                </a>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="header">
+                Övrigt
+            </div>
+            <div class="menu">
+                <a href="upphovsratt.html" class="item">
+                    Upphovsrätt
+                </a>
+                <a href="integritet.html" class="item">
+                    Integritet och etik
+                </a>
+                <a href="tillganglighet.html" class="item">
+                    Tillgänglighet </a>
+                <a href="sakerhet.html" class="item">
+                    Säkerhet
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <!--end of sidebar-->
+    <!-- Pusher-->
+    <div class="pusher">
+
+        <!-- Top menu-->
+        <div class="top ui fixed menu">
+            <a class="item sidebar">
+                 <i class="icon big sidebar"></i>Meny
+            </a>
+            <a class="item">
+                <div class="ui header">Webbutveckling 1</div>
+            </a>
+            <div class="right menu">
+                <div class="right menu">
+                    <div class="item">
+
+                        <a href="../../../index.html">
+                            <img src=" ../../../assets/images/mglogo.jpg " width="100px ">
+                        </a>
+                    </div>
+                    <div class="ui dropdown item">
+                        Kurser
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="../info/planering.html">Webbutveckling 1</a>
+                            <a class="item" href="../../webb2/info/kursplan.html">Webbutveckling 2</a>
+                            <a class="item" href="../../webbsev1/info/kursplan.html">Webbserverprogrammering 1</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Sök...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+                    >
+                </div>
+            </div>
+            <!--end of top menu-->
+
+        </div>
+        <!--end of pusher-->
+
+        <div id="introCSS" class="ui main container">
+
+            <div class="ui  grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <!--   <div class="ui grey segment">
+              <p>three wide column</p>
+            </div> -->
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui vertical segment">
+                            <!-- Intro Upphovsrätt-->
+                            <h1 class="ui header">Lagar och etik</h1>
+
+                            <p>Du som skapar webbsidor måste veta vad som gäller när du använder bilder, texter, eller
+                                annat material som någon annan skapat. Detsamma finns det lagar om hur man behandlar
+                                personupgifter på nätet. Och får man verkligen skriva, publicera vad som helst på
+                                webben?
+                                <br /> I nedanstående avsnitt behadlas upphovssättslagen, dataskydsförordningen GDPR
+                                och
+                                hur personuppgifter ska behandlas samt lagen om elektronisk kommunikation</p>
+
+                            <h2 class="ui header">Upphovsrättslagen (copyright)</h2>
+
+                            <h4 class="ui header">Vad innebär upphovsrättslagen?</h4>
+
+                            <p> Upphovsrättslagen ger fotografer, författare,
+                                kompositörer, konstnärer, m. fl rätt att bestämma hur deras verk ska användas.
+                                Ensamrätten innebär också att personen har en ekonomisk rätt och kan få skadestånd om
+                                någon bryter mot lagen.</p>
+
+                            <p> Reglerna inom upphovsrätten ger tonsättare, kompositörer, konstnärer och en hel rad
+                                andra kreativa
+                                skapare, i lagen kallas de upphovsmän, rätten att bestämma hur deras verk får användas.
+                                Detta innebär
+                                att en upphovsman kan ensam bestämma om, när eller hur verket ska användas. </p>
+
+                            <p>Upphovsmannens rätt att ensam bestämma över sitt verk uppkommer, utan formaliteter, helt
+                                automatiskt i samma
+                                ögonblick som verket skapas. Detta innebär att copyrightsymbolen © som ofta används
+                                saknar rättslig betydelse i
+                                Sverige, men den kan ändå tjäna ett syfte genom att påminna andra om att upphovsrättens
+                                regler finns.</p>
+
+                            <p>Hur länge är ett verk skyddat? </p>
+
+                            <p>Skyddstiden för ett verk gäller intill utgången av sjuttionde året efter upphovsmannens
+                                dödsår.
+                                Detta innebär att om en författare avled i mars 2000 är hela dennes produktion (oavsett
+                                utgivningsår)
+                                skyddad till utgången av 2071. För anonyma verk är skyddet 70 år från
+                                offentliggörandet. Efter det att
+                                skyddstiden utgått är verket fritt att använda.</p>
+
+                            <p> Denna korta film ger en bra introduktion till upphovsrätt. </p>
+                            <div class="ui segments">
+                                <div class="ui center aligned segment">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hz_agK8bd4Y"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                                <div class="ui secondary segment">
+                                    Inbäddad film, Kristina Alexandersson, Jesper Wallber,
+                                    Göran Thorén och Webbstjärnan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://www.skolverket.se/skolutveckling/inspiration-och-stod-i-arbetet/stod-i-arbetet/upphovsratten-for-bilder-i-skola"
+                            target="_blank">
+                            Fakta om upphovsrätt för bilder (Skolverket)
+                        </a>
+                        <a href="https://sv.wikipedia.org/wiki/Upphovsr%C3%A4tt" target="_blank">
+                            Upphovsrättslagen (Wikipedia)
+                        </a>
+
+
+                        <h3 class="ui header">Publicera texter på internet</h3>
+
+                        <p>När du och dina elever lägger ut texter på internet, heter det enligt lagen att ni överför
+                            texterna till allmänheten. Detta har upphovsmannen ensamrätt att göra. Det mest säkra är
+                            alltså att publicera texter som ni själva har skrivit och som ni själva har upphovsrätten
+                            till, oavsett om ni har tänkt lägga ut materialet på skolans hemsida, i webbtidningen, på
+                            intranätet eller skicka ut det i ett elektroniskt nyhetsbrev.</p>
+
+                        <p><b>Andras texter</b><br />Om du vill publicera en text som någon annan har författat, bör ni
+                            först fråga den personen om lov. Att citera går förstås bra, men inte att lägga ut en hel
+                            text utan tillstånd från upphovsmannen. Om ni har fått lov att använda en
+                            upphovsrättsskyddad text, så tänk på att ni också behöver tillstånd för att ändra i texten.</p>
+
+                        <p><b>Gamla texter</b><br />Det går bra att använda texter där skyddstiden gått ut, det vill
+                            säga när det har gått 70 år sedan upphovsmannen dog. Om det är texter i översättning är det
+                            viktigt att komma ihåg att även översättaren har upphovsrätt.</p>
+
+                        <p><b>Fria texter</b><br />Det går bra att använda många av de texter som är licensierade under
+                            Creative Commons och liknande avtal. Var först noga med att se efter vilka villkor som
+                            gäller för användningen. Det finns också webbarkiv med fria texter, men läs gärna
+                            instruktionerna innan du laddar ner något.</p>
+
+                        <p><b>Allmänna handlingar</b><br />Som till exempel lagar och förordningar (men inte de
+                            eventuella dikter, bilder och kartor som ingår i handlingen) går också bra att använda.</p>
+
+                        <h3 class="ui header">Publicera bilder på internet</h3>
+
+                        <p>
+                            När du publicerar något, till exempel en bild, på internet, i en blogg, på skolans intranät
+                            eller i skolans webbtidning, så heter det med en juridisk term att ni överför bilden till
+                            allmänheten. För att få göra detta behövs i de allra flesta fall upphovsmannens tillstånd.
+                        </p>
+
+                        <p><b>Andras bidler</b><br />Är det någon annan som äger upphovsrätten till bilderna bör ni
+                            först fråga den personen om lov, innan ni börjar publicera. Om det gäller en bild som ni
+                            har hittat på internet och som ni vill återanvända, hör av er till
+                            tecknaren/målaren/fotografen och fråga om det är OK. Hittar ni inte namnet på
+                            upphovsmannen, kontakta istället den person som ansvarar för webbplatsen där ni har hittat
+                            bilden.</p>
+
+                        <p><b>Egna bilder</b><br />Om det är era egna bilder eller fotografier har ni själva rätt att
+                            göra vad ni vill med dem.
+
+                            Om ni fotograferar någon annans upphovsrättsskyddade material bör upphovsmannen tillfrågas
+                            innan det läggs ut på webben. Om ni däremot tar ett fotografi där någon annans bild ingår i
+                            som en obetydllig detalj i bakgrunden behöver ni inte tillstånd från upphovsmannen.</p>
+
+                        <p><b>Bilder på människor (se Personuppgiftslagen och Datainspektionen)</b><br />Om ni har
+                            fotograferat människor kan det dock vara artigt att fråga de avfotograferade personerna om
+                            lov, innan ni lägger ut deras porträtt på webben. Om ni har fotograferat människor och vill
+                            publicera bilderna på en vanlig hemsida (och utan att det är i ett kränkande sammanhang)
+                            kräver inte PUL (personuppgiftslagen) att du frågar om lov. Men det kan naturligtvis vara
+                            artigt att göra det. OBS! I reklamsammanhang krävs alltid samtycke för att få publicera
+                            namn och bild på person.</p>
+                        <div class="ui hidden divider"></div>
+
+                        <div class="ui vertical segment">
+
+                            <h3 class="ui header"> Copyleft</h3>
+
+                            <p>Copyleft är en grupp av licenser för verk som skyddas av upphovsrättslagen. Copyleft
+                                betyder att den som har upphovsrätt kan ge andra användare den oåterkalleliga rätten
+                                att fritt distribuera (även sälja) och modifiera verket under förutsättning att även
+                                dessa kopior och varianter omfattas av samma licens när de sprids.
+                                Några exempel på programvarulicenser som använder copyleft är GNU General Public
+                                License(GPL). Exempel på copyleftlicenser för andra verk än programvara,är Creative
+                                Commons licenser.</p>
+
+                            <h4 class="ui header"> Creative Commons</h4>
+                            <p>Creative Commons är en idéell organisation som vill verka för att verk ska kunna
+                                användas helt eller delvis. Det är en samling av licenser som upphovsmannen kan
+                                tillämpa för att låta andra använda, sprida, göra om eller bygga vidare på sina verk.
+                                Den som använder ett verk som faller under Creative Commons måste ange referens till
+                                upphovsmannen och vilken typ av CC-licens som verket faller under. Nedan finns mer
+                                information och hur du kan referera till en bild som är en Creative Comomons licens.
+                            </p>
+                            <div class="ui compact segment">
+                                <div class="ui segments">
+                                    <div class="ui center aligned segment">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yd9dP3vlOyk"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="ui secondary segment">
+                                        Inbäddad film, Kristina Alexandersson, Jesper Wallerborg, Göran Thorén och
+                                        Webbstjärnan
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="ui header"> Hur använder man Creative Commons (CC)?</h4>
+                            <div class="ui compact segment">
+                                <div class="ui segments">
+                                    <div class="ui center aligned segment">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T7ZjudT7u_M"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="ui secondary segment">
+                                        Inbäddad film, Kristina Alexandersson, Jesper Wallerborg, Göran Thorén och
+                                        Webbstjärnan
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href=" http://www.creativecommons.se/" target="_blank">
+                                Creative Commons Sverige
+                            </a>
+                            <h4 class="ui header"> Symboler i Creative Commons</h4>
+
+                            <a href="https://sv.wikipedia.org/wiki/Creative_Commons"> Här kan du se en förklaring för
+                                de symboler som används i Creative Commons licenser</a>
+                        </div>
+                        <h4 class="ui header"> Använda &lt;figure&gt; och &lt;figcaption&gt; vid CC-reeferens</h4>
+                        <p>Om bilden har en Creative Commons licens ska följande anges under bilden:
+                        </p>
+                        <ul>
+                            <li> Titel på verket</li>
+                            <li> Upphovsperson</li>
+                            <li> CC-licensen</li>
+                        </ul>
+
+                        <p>Om du ska lägga in en bild med beskrivning använder du figure- och figcaptionelementet </p>
+
+                        <div class="ui compact segment">
+                            <pre><code class="html">&lt;figure&gt;
+
+    &lt;img src="flamingpos.png"&gt;
+
+    &lt;figcaption&gt;Flamingos Partying, 
+    by Pedro Szekelly, CC BY-SA 2.0)
+    &lt;/figcaption&gt;      
+
+&lt;/figure&gt;</code></pre>
+                            <a href="../../../assets/examples/cc-licens/cc.html">
+                                <div class="ui right floated small button">Visa sida</div>
+                            </a>
+                        </div>
+
+                        <h3 class="ui header"> Bilder man har rätt att använda och publicera</h3>
+
+
+                        <div class="ui vertical segment">
+                            <h4 class="ui header"> Inställningar i Google filtrerade på licens</h4>
+
+                            <p> Du kan även använda dig av inställningar på Google för att hitta bilder du har rätt att
+                                använda</p>
+
+                            <div class="ui compact segment">
+
+                                <img src="../../../assets/images//google_settings_attribution.PNG" alt="Google attribution"
+                                    width="500px">
+                            </div>
+
+
+                            <div class="ui segment link">
+                                <h4 class="ui header link">Länkar till fria bilder eller Creative Commons</h4>
+                                <a href="https://unsplash.com/" target="_blank">Unsplash
+                                </a>
+                                <br>
+
+                                <a href="https://www.flickr.com/search/advanced/" target="_blank">Flickr (Klicka i att
+                                    söka
+                                    efter CC-licens under advanced)
+                                </a>
+                                <br>
+
+                                <a href="http://commons.wikimedia.org" target="_blank">Wikimedia Commons (Creatice
+                                    Commons)
+                                </a>
+                                <br>
+
+
+                                <a href="http://thestocks.im/" target="_blank">The Stocks
+                                </a>
+                                <br>
+
+                                <a href="https://isorepublic.com/" target="_blank">ISO Republic
+                                </a>
+                                <br>
+
+                                <a href="https://pixabay.com/en/" target="_blank">Pixabay
+                                </a>
+                                <br>
+
+                                <a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank">Subtle
+                                    Patterns
+                                </a>
+                                <br>
+                                <a href="https://fontawesome.com/?from=io" target="_blank">Font Awesome (ikoner)
+                                </a>
+                                <br>
+                                <a href=https://ionicons.com/ target="_blank">Ionicons
+                                </a>
+                                <br>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="three wide column ">
+                            <!--  <div class="ui grey segment ">
+              <p>three wide column</p>
+            </div> -->
+                        </div>
+
+
+                        <!-- 
+                        <div class="ui hidden divider"></div>
+                        <a href="#">
+                            <button class="ui left floated labeled icon button">
+                                <i class="left arrow icon"></i>
+                            </button>
+                        </a> -->
+
+
+                        <a href="integritet.html">
+                            <button class="ui right floated labeled icon button">
+                                <i class="right arrow icon"></i>
+                                Integritet och etik</button>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+
+            <!-- <h4 class="ui inverted header">Footer Header</h4> -->
+            <p>&copy; &nbsp; Sandra Larsson, Mediagymnasiet Nacka Strand</p>
+
+        </div>
+    </div>
+    <!--end of footer-->
+    <!--Code syntax highlightning-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js "></script>
+    <!--jQuery include -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
+    <!-- Semantic UI include script-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js "></script>
+    <!--Local script-->
+    <script src="../../../src/script.js "></script>
+</body>
+
+</html>
